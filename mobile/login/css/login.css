@@ -1,0 +1,121 @@
+body{
+    background-color: #fff;    
+    overflow: hidden;
+}
+.logo{
+    display: block; 
+    font-size: 1.2em;
+    position: relative; left: 25px; top: 20px;
+    color: #666;
+}
+#content{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px; 
+    font-family: 'Noto Sans KR', sans-serif; 
+    border-radius: 10px;
+    overflow: hidden;
+}  
+
+#content h3{
+    font-size: 24px; 
+    margin: 10px 0 50px -20px; 
+    color: #333; 
+    text-align: center;
+    position: relative;
+}
+
+#id_pw_input{
+    width: 70%;
+    margin: 0 10%;
+    margin-bottom: 20px;
+    /* position: relative; left: 4%; */
+}
+
+#id_pw_input .login_input{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #eee;
+}
+#id_pw_input ul li{
+    margin: 10px;
+}
+input[type="text" i] {
+    padding: 2px;
+    border-color: #999;
+}
+
+input:focus, textarea:focus {
+    outline-color: rgba(189,2,2, .5);
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+#login_button{
+    margin-bottom: 20px;
+    width: 70%;
+    margin: 40px 11%;
+    background: rgb(189, 2, 2);
+    text-align: center;
+    cursor: pointer;
+}
+
+
+#login_button button{
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+}
+
+#join_button{
+    width: 60%;
+    border: 1px dashed #ccc;
+    padding: 10px;
+    margin: 45px 0% 15px 14%;
+    font-size: 14px;
+}
+
+#join_button a{
+    margin: 10px 0 0 2%;
+    display: inline-block;
+    padding: 3px 0 10px 0;
+}
+
+#join_button strong{
+    color: #bd0202;
+}
+
+#join_button span{
+    position: relative; right: -80px; top: 0;
+}
+
+
+
+.find{
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.find li a{
+    margin-right: 30px;
+}
+.find li:nth-of-type(1):after{
+    content: '|';
+    width: 1px;
+    height: 3px;
+    color: #666;
+    position: relative; left: -135px; top: 0;
+    z-index: 10;
+}
+
+input:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+    }
+    input:focus {outline: none;}

@@ -1,0 +1,73 @@
+/* 기업정보 본문 영역 */
+
+#content .contentArea{
+    width: 100%;
+}
+
+#content .contentArea div{
+    padding: 20px;
+}
+
+/*value 01*/
+
+#content .contentArea .value01{
+    text-align: justify;
+} 
+
+#content .contentArea .value01 ul{   
+    overflow: hidden; 
+}
+
+#content .contentArea .value01 ul li{
+    color: #666;
+    margin: 0;
+    float: left;
+    position: relative;
+    border-radius: 20%;
+    text-align: center;
+    margin-left: 2%;
+    width: 31%;
+    background: #f1f1f1
+}
+
+#content .contentArea .value01 p span{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#content .contentArea .value01 i{
+    display: block;
+    font-size: 2em;
+    margin: 15px 0 10px 0;
+    color: #bd0202;
+}
+
+
+/*value 02*/
+
+#content .contentArea .value02 li{
+    width: 100%;
+}
+
+#content .contentArea .value02 img{
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+#content .contentArea .value02 dl dt{
+    padding: 20px 0 30px 0;
+    font-size: 1.35em;
+    color: #bd0202;
+    font-weight: 600;
+    text-align: left;
+}
+
+#content .contentArea .value02 dd{
+    line-height: 1.9em;
+    padding-bottom: 15px;
+} 
+
+
+

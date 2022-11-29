@@ -1,0 +1,29 @@
+/* 인사말 본문 영역 */
+
+#content .contentArea .ceo{
+    text-align: justify;
+    padding-bottom: 10%;
+}
+
+#content .contentArea .ceo p{
+    margin:5%;
+    display: block;
+    line-height: 2em;
+    padding-bottom: 2%;
+}
+
+#content .contentArea .ceo .ceo_img{
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+#content .contentArea .ceo .strong{
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+#content .contentArea .ceo span{
+    color: #666;
+    margin-left: 5%;
+}

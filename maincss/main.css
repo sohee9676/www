@@ -1,0 +1,744 @@
+/* 비주얼 영역 */
+.main{
+    width: 1920px; 
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: #333;
+}
+
+.main .gallery{
+    position:relative; left:0; top:0;
+    overflow:hidden; 
+    width:2000px; 
+    height:1000px;
+}
+
+.main .gallery li{
+    display:none; 
+    position: relative;
+}
+
+.main .gallery ul li span{
+    display: block;
+    text-align: left;
+    position:absolute; left:500px; top: 330px;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 400;
+    font-style: italic;
+    z-index: 50;
+    text-shadow: 2px 2px 3px #333;
+    opacity: 0;
+    }
+
+.gallery img{animation: ani 30s linear infinite;}
+@keyframes ani {
+    from {transform: scale(1.3);}
+    to {transform: scale(1);}
+}
+
+.dock{
+    width:200px; 
+    position:absolute; left:880px; bottom:150px;
+    overflow: hidden;
+}
+
+.dock .mbutton{ 
+    margin-right:15px; 
+    cursor:pointer; 
+    display:block; 
+    float:left; 
+    width:16px; height:16px;
+    background: #fff; 
+    border-radius:8px;
+    transition: all .5s;
+}
+
+.dock span i{
+    color:#fff;
+    cursor:pointer; 
+    display:block; 
+    padding: 1px 0;
+}
+
+.main .btn{
+    display: block; 
+    width: 50px; height: 100px; 
+    position: absolute; bottom: 400px;
+    cursor:pointer; 
+    font-size: 3em;
+    /* background: rgba(255, 255, 255, .2);; */
+    color: rgba(255, 255, 255, .5);
+}
+
+
+.main .btnLeft{left:50%; margin-left: -620px;}
+.main .btnRight{left:50%; margin-left: 600px;}    
+
+.main .btn:hover{
+    color: rgba(255, 255, 255, .7);
+}
+
+/* 본문 콘텐츠 영역 */
+#content{
+    width: 1920px;
+    margin: 0 auto
+}
+
+#content .more{
+    display: block;
+    width: 150px;
+    padding: 15px 0;
+    border:1px solid #999;
+    text-align: center;
+    transition: color .5s ease-out;
+}
+
+#content h3{
+    font-size: 2.5em;
+    margin: 100px 0 70px 0;
+    font-weight: 600;
+}
+
+/* Who we are 영역*/
+
+
+@keyframes value {
+    from {transform: translateY(100px);
+        opacity: 0;
+    }
+    to {transform: translateY(0);
+        opacity:1;
+    }
+}  
+
+@keyframes value_top{
+    from {transform: translateY(50px);
+        opacity: 0;}
+    to {transform: translateY(0);
+        opacity:1;}
+}  
+
+#content .value.move .valueInner li:nth-of-type(1){
+    animation: value 1s;
+    animation-fill-mode: forwards;
+
+}
+#content .value.move .valueInner li:nth-of-type(2){
+    animation: value 1.5s;
+    animation-fill-mode: forwards;
+
+}
+#content .value.move .valueInner li:nth-of-type(3){
+    animation: value 2s;
+    animation-fill-mode: forwards;
+}
+
+#content .value.move h3{
+    animation: value_top 1.4s;
+    animation-fill-mode: forwards;
+}
+
+#content .value{
+    width: 100%;
+}
+
+#content .value .valueInner{
+    width: 1200px;
+    margin: 0 auto;
+    text-align:center;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0 70px 0;
+}
+
+#content .value ul{
+    overflow: hidden;
+}
+
+#content .value li{
+    width: 335px;
+    height: 465px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #666;
+    margin: 25px 30px;
+    transition: all .5s ease-in-out;
+    text-align: center;
+}
+
+#content .value li img{
+    width: 340px;
+    height: 260px;
+    transition: all .5s;
+}
+
+#content .value dl{
+    width: 280px;
+    height: 210px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-top: -50px;
+    background: #fff;
+    position: relative ; z-index: 30;
+    transition: all .5s;
+}
+
+#content .value dt{
+    margin: 25px 0 15px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#content .value dt>i{
+    display: block;
+    font-size: 4em;
+    padding-bottom: 30px;
+}
+
+#content .value dd{
+    font-weight: 400;
+    line-height: 1.75em;
+    padding: 10px 20px;
+    color: #666;
+}
+
+#content .value .more{
+    color: #fff;
+    border: 1px solid rgba(0,0,0,0);
+    background: #ccc;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    transition: all .5s ease-out;
+    border-radius: 30px;
+    position: relative; 
+    left: 0; top: -20px; z-index: 40;
+}
+
+ #content .value li:hover dt{
+    color: #bd0202;
+}
+
+#content .value li:hover img{
+    transform: scale(1.02);
+    filter: grayscale(30);
+}
+
+#content .value li:hover dd{
+    display: block;
+} 
+
+#content .value li:hover .more{
+    background: rgba(189,2,2);
+    color: #fff;
+    border: 1px solid #bd0202;
+}
+
+/*비즈니스 영역*/
+
+
+@keyframes business_top {
+    from {transform: translateX(40px);
+        opacity: 0;}
+    to {transform: translateX(0);
+        opacity:1;}
+}
+
+@keyframes business_text {
+    from {transform: translateX(100px);
+        opacity: 0;}
+    to {transform: translateX(0);
+        opacity:1;}
+}
+
+@keyframes business_img {
+    from {transform: translateX(-100px);
+        opacity: 0;}
+    to {transform: translateX(0);
+        opacity:1;}
+} 
+
+/* move */
+
+#content .business.move h3{
+    animation: business_top 1s;
+}
+
+#content .business.move .business_text{
+    animation: business_text 1.2s;
+}
+
+#content .business.move .business_img{
+    animation: business_img 1.2s;
+} 
+
+#content .business{
+    position: relative;
+}
+
+#content .business_img{
+    width: 820px;
+    height: 460px;
+}
+
+#content .business_box{
+    background: #f8f8f8;
+    padding: 10px 0 110px 0;
+}
+   
+#content .business_box h3{
+    text-align: right;
+    margin-right: 350px;
+}
+
+#content .business_box img{
+    margin: 60px 0 70px 300px;
+    box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, .3);
+    display: none;
+}
+
+#content .business_box ul{
+    position: relative;
+}
+
+#content .business_box .boxInner{
+    height: 650px;
+    overflow: hidden;
+}
+
+#content .business_box .boxInner ul li{
+    width: 420px;
+    height: 400px;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background: #bd0202;
+    opacity: .9; 
+    transition: all .5s ease-out; 
+    padding: 20px 50px;
+    text-align: left;
+    position: absolute; right: 350px; bottom: -140px;
+    display: none;
+}
+
+#content .business_box ul li:hover{
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, .6);
+    opacity: 1;
+}
+
+#content .business_box h4{
+    font-size: 1.5em;
+    margin: 40px 0 30px 25px;
+}
+
+#content .business ul li p{
+    margin: 0 25px 40px 25px;
+    line-height: 2em;
+}
+
+#content .business a.more{
+    display: block;
+    width: 220px;
+    padding:14px 0;
+    margin-left: 30px;
+    color: #fff;
+    transition: all .5s ease-out;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 30px; 
+}
+
+#content .business_box .more:hover{
+    background: #fff;
+    color: #bd0202;
+}
+
+#content .business .right_btn,.business .left_btn{   
+    width: 100px;
+    height: 100px;
+    font-size: 4em;
+    text-align: center;
+    color: #999;
+    transition: all .5s ease-out;
+}
+
+#content .business .right_btn{
+    position: absolute; right:100px; top:500px;
+}
+
+#content .business .right_btn:hover{
+    color: #bd0202;
+}
+
+#content .business .left_btn{
+    position: absolute; left:100px; top:500px;
+}
+
+#content .business .left_btn:hover{
+    color: #bd0202;
+}
+
+/* 지속가능경영 영역*/
+
+ @keyframes esg_move {
+    from {transform: translateY(100px);
+        opacity: 0;}
+    to {transform: translateY(0);
+        opacity:1;}
+}
+
+#content .esg.move {
+    animation: esg_move 1s ;
+    animation-fill-mode: forwards;
+}
+
+#content .esg.move h3{
+    animation: esg_move .5s ;
+    animation-fill-mode: forwards;
+}
+
+#content .esg ul.move{
+    animation: esg_move .5s;
+    animation-delay: .5s;
+} 
+
+#content .esg{
+    width: 100%;
+    padding:30px 0 100px 0;
+}
+
+#content .esg .esgInner{
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50px;
+    box-shadow:  0 0 20px 0 rgba(0,0,0,.2);
+}
+
+#content .esg .esgInner .esg_box{
+    position: absolute;left: 50px; top: 160px; 
+}
+
+#content .esg h3{
+    margin-left: 300px;
+}
+
+#content .esg ul{
+    position: relative;
+    width: 2400px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+#content .esg ul li{
+    width: 800px;
+    height: 500px;
+    color: #fff;
+    position: absolute ;
+    float: left;
+}
+
+#content .esg ul li:nth-of-type(1){
+    left: 0; height: 500px; z-index: 10;
+    background: url(../images/esg01.jpg)no-repeat; 
+}
+
+#content .esg ul li:nth-of-type(2){
+    left: 400px; height: 500px; z-index: 20;
+    background: url(../images/esg02.jpg)no-repeat;
+}
+
+#content .esg ul li:nth-of-type(3){
+    left: 800px; height: 500px; z-index: 30;
+    background: url(../images/esg03.jpg)no-repeat;
+}
+
+#content .esg .esgInner h4{
+    padding-bottom: 20px;
+    display: block;
+    font-size: 1.9em;
+    color: #fff;
+    text-shadow: 1px 1px 3px #666;
+    text-align: justify;
+    line-height: 1.4em;
+    transition: all .5s ease-out;
+    margin-left: 30px;
+} 
+
+#content .esg .esgInner li .esg_main{
+    padding: 30px;
+    font-size: 1.15em;
+    line-height: 1.7em;
+    text-align: justify;
+    color: #fff;
+    transition: all .5s ease-out;
+}
+
+#content .esg .esgInner .esg_text{
+    opacity: 0;
+}
+
+#content .esg .esgInner div.esg_view{
+    width: 400px;
+    height: 500px;
+    display: block;
+    position: relative; top: 0; left: 0;
+}
+
+#content .esg .esgInner .esg_view span{
+    width: 400px;
+    height: 500px;
+    position: absolute; top: 0; left: 0;
+}
+
+#content .esg .more{
+    width: 170px;
+    padding: 13px 0;
+    text-align: center;
+    color: #333;
+    background: rgba(255,255,255,1);
+    position: absolute; left: 30px; bottom:-80px;
+    z-index: 60;
+    border-radius: 30px;
+    transition: all .5s ease-out;
+    border: none;
+}
+
+ #content .esg li:hover .more{
+    color: #fff;
+    border-color: rgba(189,2,2,.3);
+    background: rgba(189,2,2,1);
+    position: absolute; left: 30px; bottom:-80px;
+} 
+
+/*뉴스룸 영역*/
+
+@keyframes news_top {
+    from {transform: translateY(50px);
+        opacity: 0;}
+    to {transform: translateY(0);
+        opacity:1;}}
+
+@keyframes news_move {
+    from {transform: translateX(-100px);
+        opacity: 0;}
+    to {transform: translateX(0);
+        opacity:1;}
+}
+
+#content .news.move h3{
+    animation: news_top .7s;
+}
+
+#content .news.move .news_box{
+    animation: news_move 1s;
+}
+
+
+#content .news{
+    margin: 70px 0 20px 0;
+    width: 100%;
+    text-align: center;
+    background: #f8f8f8; 
+    overflow: hidden;
+}
+
+#content .news .news_box{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#content .news #slide_gallery_box{
+    width: 1800px;
+    height: 420px;
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+}
+
+#content .news .news_inner{
+    width: 3600px;
+    height: 420px;
+    overflow: hidden; 
+    position: relative; left: 0; top: 0;
+}
+
+#content .news .news_inner ul{
+    overflow: hidden;
+    float: left;
+}
+
+#content .news h3{
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #bd0202;
+    margin: 70px 0 70px 0;
+}
+
+#content .news .news_inner #list_img{
+    overflow: hidden;
+    width: 330px;
+    height: 200px;
+}
+
+#content .news .news_inner #list_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s;
+}
+
+#content .news .news_inner li{
+    display: block;
+    width: 330px;
+    height: 420px;
+    float: left;
+    background: #fff;
+    margin: 0 15px;
+    text-align: center;
+    transition: all .5s ease-out;
+    overflow: hidden;
+}
+
+#content .news .news_inner li:hover img{
+    transform: scale(1.07);
+}
+
+#content .news .news_inner li dl{
+    padding: 0 20px 10px 20px;
+    text-align: center;
+}
+
+#content .news .news_inner li dl dt{
+    color: #333;
+    font-size: 1.1em;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+#content .news .news_inner dd.con{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#content .news .news_inner dd span{
+    color: #999;
+    display: block;
+    margin-top: 20px;
+    font-size: .9em;
+    font-weight: 400;
+}
+
+#content .news_box .top_btn li a{
+    width: 50px;
+    display: block;
+    padding: 12px 0;
+    color: #666;
+    position: absolute; right: 500px; top: 50px;
+    transition: all .5s ease-out;
+    border-radius: 50%;
+    background: #fff;
+}
+
+#content .news_box .top_btn li a.more {
+    border: none;
+    position: absolute; right: 500px; top: 50px;
+}
+
+#content .news_box .top_btn li a:hover {
+    background: #bd0202;
+    color: #fff;
+} 
+
+#content .news .top_btn li a.left_btn{
+    position: absolute; right: 440px; top: 50px;
+}
+
+#content .news .top_btn li a.right_btn{
+    position: absolute; right: 380px; top: 50px;
+}
+
+
+/*인재채용 영역*/
+
+@keyframes hire_text {
+    from {transform: translateY(50px);
+        opacity: 0;}
+    to {transform: translateY(0);
+        opacity:1;}}
+
+@keyframes hire_span {
+    from {transform: translateX(-80px);
+        opacity: 0;}
+    to {transform: translateX(0);
+        opacity:1;}}
+
+#content .hire.move h3{
+    animation: hire_text 1s;
+}
+
+#content .hire.move p{
+    animation: hire_text 1.5s;
+}
+
+
+#content .hire{
+    margin: 50px 0;
+    height: 380px;
+    background: url(../images/hire.jpg) center 300px no-repeat;
+    background-attachment: fixed;
+    transition: all .5s ease-out;
+}
+
+#content .hire .hire_box{
+    width: 1200px;
+    padding: 70px 0;
+    height: 367px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+#content .hire:hover img{
+    filter: grayscale(.5);
+}
+
+#content .hire h3{
+    color: #fff;
+    margin: 15px 0 0 0; 
+}
+#content .hire p{
+    font-size: 1.75em;
+    line-height: 1.5em;
+    color: #fff;
+    margin: 25px 0 0 0 
+}
+
+#content .hire .hire_box .more{
+    width: 220px;
+    background: #fff;
+    border:none;
+    text-align: center;
+    transition: all .5s ease-out;
+    position: relative; left: 0px; bottom:40px;
+}
+
+#content .hire.move .more{
+    animation: hire_span .5s;
+}
+
+
+#content .hire .more:hover{
+    background: #bd0202;
+    color: #fff;
+}
+

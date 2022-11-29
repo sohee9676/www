@@ -1,0 +1,112 @@
+/* 서브페이지 공통영역 */
+
+.main{
+    width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main h3{
+    font-size: 2em;
+    font-weight: 400;
+    color: #fff;
+    position: absolute; left: 50%; top: 300px; margin-left: -80px;
+}
+
+.subNav{
+    width:100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.subNav ul{
+    width: 925px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.subNav ul li{
+    float: left;
+    width: 230px;
+    text-align: center;
+    position: relative;
+}
+
+.subNav ul li::after{
+    content: '';
+    width: 1px;
+    height: 20px;
+    background: #ccc;
+    position: absolute; left: 230px; top: 26px;
+}
+
+.subNav ul li:nth-child(1)::before{
+    content: '';
+    width: 1px;
+    height: 20px;
+    background: #ccc;
+    position: absolute; left: 0; top:26px;
+}
+
+.subNav ul li a{
+    display: block;
+    padding: 20px 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.subNav ul li a:hover{
+    color: #bd0202;
+    border-bottom: 2px solid #bd0202;
+    font-weight: 600;
+}
+
+.subNav ul li .current{
+    color: #bd0202;
+    border-bottom: 2px solid #bd0202;
+    font-weight: 600;
+}
+
+#content{
+    width: 100%;
+}
+
+#content .titleArea{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content .titleArea .lineMap{
+    margin: 40px 0 20px 1000px;
+    font-size: .9em;
+    color: #999;
+}
+
+#content .titleArea h2{
+    font-size: 2.2em;
+    text-align: center;
+    margin: 50px;
+    position: relative;
+}
+
+#content .titleArea h2::after{
+    content: "";
+    width: 3px;
+    height: 60px;
+    background: #bd0202;
+    position: absolute; left: 550px; top: 90px;
+}
+
+#content .titleArea p{
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    font-family: 'Noto Serif KR', serif;
+    margin-top: 110px;
+}
+
+#content .titleArea p:last-child{
+    font-size: 1.1em;
+    margin: 20px 0 60px 0;
+    color: #666;
+}

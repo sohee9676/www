@@ -1,0 +1,159 @@
+/* 주요연혁 본문 영역 */
+
+#content .contentArea{
+    width: 1920px;
+    margin: 0 auto;
+    background: url(../images/content3/back.jpg) 
+    -20px -1250px no-repeat;
+}
+
+#content .contentArea .tab{
+    width: 100%
+}
+
+#content .contentArea .tab ul{
+    overflow: hidden;
+    width: 808px;
+    margin: 0 auto;
+}
+
+#content .contentArea .tab li a{
+    float: left;
+    width: 200px;
+    border: 1px solid #ccc;
+    background: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#content .contentArea .tab li a:hover{
+    background: #bd0202;
+    color: #fff;
+    border: 1px solid #bd0202
+}
+
+#content .contentArea .tab ul li .current{
+    background: #bd0202;
+    color: #fff;
+    border: 1px solid #bd0202;
+}
+
+#content .contentArea h3{
+    display: block;
+    color: #bd0202;
+    font-size: 1.2em;
+    position: relative; left: -300px; top: 55px;
+}
+
+.historyAll h3::after{
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #bd0202;
+    position: absolute; left: 190px; top:5px;
+            z-index: 10;
+}
+
+
+#content .contentArea img{
+    width: 630px;
+    height: 320px;
+    margin-left: 20px;
+}
+
+
+#content .historyAll{
+    width: 700px;
+    margin: 40px 0 70px 900px
+}
+
+#content .historyAll dl{
+    margin: 20px;
+    line-height: 2em;
+    position: relative;
+}
+
+
+.historyAll dl::after{
+    content: "";
+    width: 2px;
+    height: 600px;
+    background: #999;
+    position: absolute; left: -120px; top:30px
+}
+
+.historyAll dt{
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.historyAll span{
+    color: #999;
+    padding-right: 20px;
+}
+
+.historyAll dd::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 2px solid #bd0202;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute; left: -128px; top: 55px;
+    z-index: 10;
+}
+
+/*on*/
+
+#content .contentArea .tab.tabOn{
+    width: 100%;
+    position: fixed; left: 0px; top: 0; 
+    z-index: 120;
+    background: #bd0202;
+    color: #bd0202;
+    border-color: #fff;
+}
+
+#content .contentArea .tab.tabOn ul{
+    background: #fff;
+    /* padding: 10px 0; */
+}
+
+#content .contentArea .tab.tabOn li a{
+    background: #bd0202;
+    border-color: #bd0202;
+    color: #ccc;
+    padding: 18px 0;
+}
+
+#content .contentArea .tab.tabOn li a.current{
+    background: #fff;
+    color: #bd0202;
+    border-color: #fff;
+}
+
+
+ /* 메뉴 활성화  scroll spy */
+
+ .tab ul li a.spy{
+    border: 1px solid #fff;
+    background: #fff; 
+    color: #333;
+}
+ 
+ .historyAll div{
+    position: relative; top:80px; 
+    opacity: 0; 
+    transition: all .5s;
+}
+
+ /* scroll animation 최종값(목적지)  */
+
+ .historyAll div.boxMove{
+    position: relative; top:0; 
+    opacity: 1 ; 
+ }
+
+ 

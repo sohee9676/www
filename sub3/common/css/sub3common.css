@@ -1,0 +1,13 @@
+/* 서브페이지 공통영역 */
+
+.subNav ul{
+    width: 695px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contentArea h3 {
+    font-size: 2em;
+    position: relative; 
+    margin: 50px ;
+}

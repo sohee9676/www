@@ -1,0 +1,153 @@
+.contentArea h3{
+    font-size: 1.4em;
+    position: relative;
+}
+.contentArea .hire {
+    padding: 50px 0 100px 0;
+}
+.contentArea .hire .hire_front{
+    width: 100%;
+    height: 250px;
+    background: url(/extra/white_width.jpg);
+    text-align: center;
+    color: #fff;
+}
+
+.contentArea .hire .hire_front p{
+    margin-bottom: 10px;
+}
+
+
+.contentArea .hire .hire_front h3{
+    padding: 60px 0 20px 0 ;
+}
+
+.contentArea .hire .hire_inner{
+    width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 70px 0;
+    position: relative;
+}
+
+.contentArea .hire .hire_inner img{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+    margin-right: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+}
+
+.contentArea .hire .hire_inner p::after{
+   content: '';
+   height: 1000px;
+   border: 1px dashed #bd0202; 
+   position: absolute; left: 500px; top: 0px;
+   transform: rotate(50deg);
+}
+
+.contentArea .hire .hire_inner p:nth-of-type(1):after{
+    position: absolute; left: 400px; top: 200px;
+}
+
+
+.contentArea .hire .hire_inner {
+    padding: 100px 0;
+    position: relative;
+}
+.contentArea .hire .hire_inner p{
+    display: block;
+    margin: 70px 30px 30px 30px;
+    font-size: 1.4em;
+}
+
+.contentArea .hire .hire_inner span{
+    display: block;
+    font-size: 1.3em;
+    margin-bottom:20px;
+}
+
+.contentArea .hire .hire_inner li{
+    padding: 50px 0 ;
+    overflow: hidden;
+    position: relative;
+}
+
+.contentArea .hire .hire_inner li:nth-of-type(1){
+    margin-left: 150px;
+}
+
+.contentArea .hire .hire_inner li:nth-of-type(2){
+    margin-left: 650px;
+}
+
+.contentArea .hire .hire_inner li:nth-of-type(3){
+    margin-left: 200px;
+}
+
+.contentArea .hire .hire_inner li:nth-of-type(4){
+    margin-left: 660px;
+}
+
+.contentArea .hire .hire_inner li:nth-of-type(5){
+    margin-left: 220px;
+}
+
+
+.contentArea .hire .hire_inner li::after{
+    content: '';
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: rgba(189, 2, 2, .6);
+    position: absolute; left: 150px; top: 180px; z-index: -10;
+}
+
+.contentArea .hire .hire_inner li:nth-of-type(1):after{
+    background: rgba(189, 2, 2, .4);
+}
+
+.contentArea .hire .hire_inner li:nth-of-type(2):after{
+    background: #ccc;
+}
+
+.contentArea .hire .hire_inner li:nth-of-type(3):after{
+    background: rgba(189, 2, 2, .8);
+}
+
+.contentArea .hire .hire_inner li:nth-of-type(4):after{
+    background: #e8e8e8;
+}
+
+
+/*접수 안내*/
+
+.contentArea .hire_info{
+    width: 100%;
+    height: 250px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.contentArea .hire_info p{
+    line-height: 2em;
+}
+
+.contentArea .hire_info p:nth-of-type(1){
+    padding-top: 40px;
+}
+
+.contentArea .hire_info p:nth-of-type(2){
+    padding-bottom: 40px;
+}
+
+.contentArea .hire_info a{
+    display: block;
+    width: 280px;
+    padding: 15px 0;
+    background: #bd0202;
+    color: #fff;
+    margin: 0 auto;
+}

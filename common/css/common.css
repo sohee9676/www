@@ -1,0 +1,399 @@
+@charset "utf-8"; @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap');
+
+/* CSS Reset */ 
+html, body, div , span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, 
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, b, u, i, 
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, 
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, 
+section, summary, time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;} 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display: block;} 
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 18px;color: #333} 
+ol, ul{list-style: none;} table{border-collapse: collapse; border-spacing: 0;} 
+address{font-style: normal} a{color: #333; text-decoration: none} 
+img{border: 0; vertical-align: top} 
+.hidden{display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff;} 
+#skipNav{
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+   z-index: 60; 
+}
+
+#skipNav a{
+    display: block;
+    height: 1px;
+    margin-bottom: -1px;
+    font-size: 1.2em;
+    color: #333;
+    overflow: hidden;
+    text-align: center;
+}
+
+#skipNav a:hover, #skipNav a:focus, #skipNav a:active{
+    height: auto; padding: 10px 0; background: #f9f9f9;
+}
+
+.wrap{width: 100%; overflow: hidden;} 
+
+/* font-family: 'Noto Sans KR', sans-serif; */ 
+/* font-family: 'Roboto', sans-serif; */ 
+/* font-family: 'Noto Serif KR', serif; */
+
+/* header 공통영역 */ 
+
+    #headerArea{
+        width: 100%; 
+        height: 90px; 
+        overflow: hidden; 
+        position: fixed; left: 0; top: 0; 
+        z-index: 100; 
+        color: #fff;
+        transition: background .5s;
+    } 
+
+    #headerArea .headerInner{
+        width: 1200px; 
+        height: 80px;
+        margin: 0 auto; 
+        transition: all .5s;
+    } 
+
+    #headerArea h1{
+        float: left;
+        margin: 32px 15px 0 0;
+    }
+
+    #headerArea h1 a{
+        display: block; 
+        width: 190px; 
+        height: 30px; 
+        text-indent: -1000px; 
+        overflow: hidden; 
+        background: url(/common/images/logo_190_all_white.png) no-repeat; 
+        background-position: center; 
+        z-index: 100;
+        transition: all .5s;
+    } 
+
+    #headerArea:hover h1 a{
+        background: url(/common/images/logo_190_color_black.png) no-repeat;
+    }
+
+    #headerArea .headerInner:hover ul li.menu{
+        color: #bd0202;
+    }
+
+
+    #headerArea #gnb{
+        width: 850px;
+        float: left;
+    }
+
+    #headerArea ul.dropdownmenu{
+        /*overflow:hidden;*/
+        text-align: center;
+        float: left;
+        width: 100%;
+    }
+
+    #headerArea ul.dropdownmenu li.menu{
+        position: relative;
+        float: left;
+        width: 16.66%;
+    }
+
+    #headerArea ul.dropdownmenu>li h3 a{
+        display: block;
+        color: #fff;
+        height: 70px;
+        font-weight: 400;
+        text-align: center;
+        transition: all .5s;
+        padding-top: 10px;
+        line-height: 75px;
+        font-size: 1.1em;
+    }
+
+    #headerArea ul.dropdownmenu>li ul li a:hover{
+        color: #bd0202;
+    }
+
+    /* header on */
+    #headerArea.on .headerInner h1 a{
+        background: url("../images/logo_190_color_black.png");
+    }
+
+    #headerArea.on .login li{
+        color: #666;
+    }
+
+    #headerArea.on .login li.on ul{
+        background: rgba(189,2,2,.6)
+    }
+
+    #headerArea.on .login li::after{
+        background: #666;
+    }
+
+
+    /* 2 depth */
+
+    #headerArea #gnb ul.dropdownmenu li ul{
+        width: 100%;
+        height: 320px;
+        position: absolute; top: 70px; left: 0;
+        padding: 10px 0;
+        display: none;
+    }
+
+    #headerArea #gnb ul.dropdownmenu li ul li{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    #headerArea #gnb ul.dropdownmenu li ul li a{
+        display: block;
+        border-bottom: 2px solid rgba(255,255,255,0);
+        padding: 10px 0;
+        color: #666;
+
+    }
+
+    #headerArea #gnb ul.dropdownmenu li ul li a:hover{
+        color: #bd0202;
+        border-bottom: 2px solid #bd0202;
+    } 
+
+
+
+
+/* 로그인 회원가입 */
+
+    #headerArea .login{
+        overflow: hidden;
+    } 
+
+    #headerArea .login ul{
+        float: left;
+        margin-top: 28px;
+    } 
+
+    #headerArea .login li{ 
+        float: left;
+    } 
+    
+    #headerArea .login li:nth-of-type(1){
+        margin-right: 20px;
+        position: relative;
+    }
+
+    #headerArea .login li a::after{
+        content: '';
+        width: 1px;
+        height: 13px;
+        background: #fff;
+        position: absolute; left: 63px; top: 25px;
+    }
+
+    #headerArea .login li a{
+        display: block; 
+        padding: 10px 0;
+        color: #fff; 
+        font-weight: 300;
+        font-size: 15px;
+    } 
+
+    #headerArea:hover .login a::after{
+        background: #666;
+    }
+
+    #headerArea .login li a:nth-of-type(1)::after{
+        display: none;
+    }
+
+    #headerArea .login li:nth-of-type(1){
+        margin-left: 0;
+    } 
+
+    #headerArea:hover .login a{
+        color: #666;
+    }
+
+    #headerArea:hover .login a::after{
+        background: #ccc;
+    }
+  
+    /* footer 공통영역 */
+
+     #footerArea{
+         width: 100%;
+         background: #f9f9f9; 
+         color: #666;
+         position: relative;
+         }
+
+    #footerArea::after{
+        content: ''; 
+        display: block;
+        width: 100%; 
+        height: 1px; 
+        background: #ccc; 
+        position: absolute;left:0; top:65px; 
+        z-index: 20;
+    }
+
+    #footerArea .footerInner{
+        width: 1200px; 
+        margin: 0 auto; 
+        padding-bottom: 35px;
+        position: relative;
+    }
+
+    #footerArea img{
+        width: 206px;
+        height: 26px;
+        background: url(../images/footer_logo.png) no-repeat;
+        position: absolute; left: 30px; top: 140px;
+    }
+
+    #footerArea .footer_top{
+        width: 100%; 
+    } 
+
+    #footerArea .footerInner ul{ 
+        overflow: hidden; 
+    }
+    #footerArea .footer_top li{
+        float: left; 
+        margin: 20px 30px 20px 30px; 
+        font-size: .9em;
+    }
+    #footerArea .footer_top li a{ 
+        display: block; 
+        color: #666; 
+    } 
+    #footerArea .footer_top li a:hover{
+        color: #333; 
+        font-weight: 500;
+    } 
+
+    #footerArea address{
+        color: #666;
+        margin:20px 0 0 300px ;
+        font-size: .9em;
+        line-height: 1.5em;
+    }
+
+    #footerArea .footerInner>p{
+        color: #999; 
+        margin: 20px 0 0 300px;
+    }
+
+    #footerArea .sns{
+        position: absolute; right: 40px; top:15px;
+    }
+   
+    #footerArea .sns ul{
+        overflow: hidden;
+    }
+
+    #footerArea .sns li{
+        display: block;
+        float: left;
+        text-align: center;
+        margin-right: 18px;
+    }
+
+    #footerArea .sns a{
+        display: block;
+        width: 40px;
+        height: 40px;
+        font-size: 1.25em;
+        border: #fff;
+        border-radius: 50%;
+        background: #fff;
+        color: #bd0202;
+        transition: all .5s ease-out;
+    }
+
+    #footerArea .sns a:hover{
+        background: #bd0202;
+        color: #fff;
+        border-color: #999;
+    }
+
+    #footerArea .family{
+        position: relative; bottom: 50px; right:50px;
+    } 
+
+    #footerArea .family>a{
+        display: block; 
+        width: 160px; 
+        background: rgba(232,232,232);
+        color:#333;
+        height: 45px;
+        padding-top: 15px;
+        text-align: center;
+        transition: all .5s ease-out; 
+        position: absolute; right: 0px; bottom:0;
+    }
+
+    #footerArea .family>a:hover{ 
+        background: rgba(204,2,2);
+        color: #fff;
+    } 
+    #footerArea .family ul{ 
+        width: 160px; 
+        display: none; 
+    } 
+    #footerArea .family .arrow{ 
+        display: block; 
+        background: #fff; 
+        font-size: .9em;
+    } 
+
+    #footerArea .family .aList{
+        position: absolute; bottom:60px; right: 0; z-index: 50;
+        width: 160px;
+        display: none;
+        background: #fff;
+    }
+
+    #footerArea .family .aList li{
+        line-height: 1.5em;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+
+    #footerArea .family .aList li a{
+        display: block;
+        text-align: center;
+    }
+
+    #footerArea .family .aList li:hover{
+        background: #f1f1f1;
+        color: #666;
+    }
+
+    .topMove{
+        font-size: 1.2em;
+        display: block;
+        width: 70px;
+        padding: 20px 0;
+        text-align: center;
+        background: rgba(189, 2, 2,.7);
+        color: #fff;
+        position: fixed; right: 50px; bottom: 100px; margin-left: 400px;
+        z-index: 30;
+    }
+
+    .topMove:hover{
+        background: #bd0202;
+        opacity: 1;
+    }

@@ -1,0 +1,87 @@
+<? session_start(); ?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍보센터-홍보영상</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../common/css/sub_common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_content2.css">
+   
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/e960e8ad99.js" crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+
+<body>
+    <? include "../common/sub_header.html" ?>
+
+      <div class="main">
+        <img src="../sub4/common/images/sub4_main.jpg" alt="서브4메인이미지">
+        <h3>홍보센터</h3>
+      </div>
+      
+      <div class="subNav">
+          <ul>
+              <li><a href="../news/list.php">보도자료</a></li>
+              <li><a class="current" href="../sub4/sub4_2.html">홍보영상</a></li>
+          </ul>
+      </div>
+
+    <article id="content">
+        <div class="titleArea">
+            <div class="lineMap">
+                    <span> <i class="fa-solid fa-house"></i> </span>&gt;
+                    <span> 홍보센터 </span>&gt;
+                    <strong> 홍보영상 </strong>
+            </div>
+                <h2>홍보영상</h2>
+                <p>We always share dongah's video</p>
+                <p>동아건설산업 홍보영상을 통해 여러분에게 다가갑니다.</p>
+        </div>
+
+              <!-- 본문 콘텐츠 영역 -->
+
+        <div class="contentArea">
+           <div class="video">
+             <div class="video_content">
+                 <iframe width="700" height="450" 
+                     src="https://www.youtube.com/embed/QyG27OHYzew" 
+                     title="YouTube video player" 
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                     gyroscope; picture-in-picture" allowfullscreen>
+                 </iframe>
+             </div>
+            
+             <ul>
+                 <li><a href="https://www.youtube.com/embed/gvnV2-f64nQ" target="video">
+                    <img src="./images/sm1.JPG" alt="영상1"></a>
+                    <i class="fa-brands fa-youtube"></i>
+                    <p>오늘을 넘어 미래로! SM그룹 홍보영상</p>
+                    <span>2020.7.28.</span>
+                </li>
+                 <li><a href="https://www.youtube.com/embed/OX3U3wckwbc" target="video">
+                    <img src="./images/sm2.JPG" alt="영상2"></a>
+                    <i class="fa-brands fa-youtube"></i>
+                    <p>건설역사를 새롭게 창조해 나가는 SM</p>
+                    <span>2020.7.28.</span>
+                </li>
+                 <li><a href="https://youtu.be/gvnV2-f64nQ" target="video">
+                    <img src="./images/sm3.JPG" alt="영상3"></a>
+                    <i class="fa-brands fa-youtube"></i>
+                    <p>THE VALUE BUILDER!</p>
+                    <span>2021.4.5.</span>
+                </li>
+             </ul>
+           </div>
+        </div>
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/video.js"></script>
+
+</body>

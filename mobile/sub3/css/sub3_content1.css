@@ -1,0 +1,200 @@
+.contentArea h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 6%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    background: #fff;
+    padding: 5% 0;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+/*6대 원칙*/
+
+.contentArea .quality03{
+    position: relative;
+    padding: 30px 0 70px 0;
+}
+
+.contentArea .quality03 ul{
+    overflow: hidden;
+}
+
+.contentArea .quality03 li{
+    margin: 0 35px;
+    text-align: center;
+    position: relative;
+}
+
+.contentArea .quality03 li::after{
+    content: '';
+    width: 90%;
+    height: 1px;
+    background: #ccc;
+    position: absolute; left: 10px; bottom: -10px;
+}
+
+.contentArea .quality03 li i{
+    display: block;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #bd0202;
+}
+
+.contentArea .quality03 dl{
+    text-align: center;
+    padding: 8% 0 ;
+}
+
+.contentArea .quality03 dt{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.contentArea .quality03 dd{
+    line-height: 2em;
+    color: #666;
+    width: 88%;
+    margin-left: 5%;
+}
+
+
+/* 품질방침 콘텐츠 영역*/
+
+.contentArea .quality01 {
+    width: 100%;
+    background: #f8f8f8;
+    padding-bottom: 100px;
+}
+
+.contentArea .quality01>h3{
+    margin-top:20px;
+}
+
+.contentArea .quality01 img:first-of-type{
+    margin-right: 60px;
+}
+
+/*품질방침*/
+
+.contentArea .quality01 .rule01{
+    width: 100%;
+}
+
+.contentArea .rule01 h3{
+    margin-top: 5%;
+}
+
+.contentArea .rule01 p{
+    line-height: 2.2em;
+    margin-left: 40px;
+    text-align: justify;
+    padding: 10% 15%;
+    background: rgb(237, 237, 237);
+}
+
+.contentArea .rule01 p:nth-child(1){
+    position: relative; left: 60px; top: 0;
+}
+
+.contentArea .rule01 span{
+    padding: 5px 10px;
+    font-size: 2.7em;
+    font-weight: 600;
+    color: #999;
+    background: rgba(255,255,255,.6);
+    position: relative; left: 10px; top: 50px;
+}
+
+/* 품질경영시스템 */
+
+
+.contentArea .quality02{
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.contentArea .process ul{
+    margin-left: 8%;
+}
+
+.contentArea .process li a{
+    font-size: 1.1em;
+    text-align: center;
+    background: #999;
+    color: #fff;
+    margin: 1%;
+    padding: 6% 2%;
+    width: 40%;
+    float: left;
+    border-radius: 10px;
+    display: block;
+}
+
+
+/* 인증서 */
+
+.contentArea .paper{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #f8f8f8;
+}
+
+.contentArea .paper li{
+    margin-bottom: 50px;
+}
+
+.contentArea .paper dl{
+    line-height: 1.2em;
+    margin: 10%;
+}
+
+.contentArea .paper dl dt{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 10% 0;
+    color: #bd0202;
+}
+
+.contentArea .paper dl dd{
+    line-height: 2em;
+}
+
+.contentArea .paper dl dd span{
+    display: block;
+    font-weight: 500;
+    color: #999;
+    padding-top: 5%;
+}
+
+.contentArea .paper img{
+    width: 50%;
+    margin: 5%;
+    border: 2px solid #ccc;
+    transition: all .5s ease-out;
+}
+
+.contentArea .paper .iso img{
+    margin-left: 25%;
+}

@@ -1,0 +1,142 @@
+    body{
+        background: rgb(255, 255, 255);
+        overflow: hidden;
+    }
+    .logo{
+        display: block; 
+        font-size: 1.2em;
+        position: relative; left: 25px; top: 20px;
+        color: #666;
+    }
+    
+    #content{
+        width: 750px; 
+        margin: 30px auto;
+        padding: 30px; 
+        font-family: 'Noto Sans KR', sans-serif; 
+        border: 1px solid #eee;
+        box-shadow: 2px 5px 8px #ccc;
+        border-radius: 10px;
+}  
+
+    .member_tab{padding: 30px 0;border-top: 1px solid #333;}
+    .member_tab a{font-size: 24px;padding: 10px;margin: 0 10px;color: #aaa;}
+    .member_tab a.on{color: #333 ;border-bottom: 2px solid #333;font-weight: bold}
+    .member_tab span{font-size: 24px;padding: 10px;margin: 0 10px;color: #fff;font-weight: bold}
+
+    .join{
+        text-align: left; 
+        position: relative;
+    }
+
+    .join h2{
+        font-size: 24px; 
+        margin: 10px 0 50px 0px; 
+        color: #333; 
+        text-align: center;
+        }
+    .join h2::before{
+        content: ''; 
+        position: absolute; top: 5px; left: 310px; 
+        width: 5px; height: 28px;
+        background: #bd0202;
+    }
+
+    .join h3{font-size: 20px;margin: 20px 0; color: #333;}
+    .join h3::after{
+        content: '(필수)';
+        color: #bd0202;
+        font-weight: 400;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .join .policy{
+        padding: 10px; 
+        overflow-y: scroll; 
+        height: 135px; 
+        margin: 20px 0;
+        border: 1px solid #ddd;
+        background: #fff; 
+        font-size: 14px; 
+        line-height: 1.7em;
+    }
+    .join .check{
+        font-size:15px;
+        color: #333; 
+        margin: 20px 0 60px;
+    }
+    .join .button{
+        text-align: center;
+        margin: 150px 0 15px 0
+    }       
+    .join .button .ok,.join .button button,.join .allcheck{
+        display: inline-block;
+        width: 300px; 
+        line-height: 24px;
+        padding: 20px 0;
+        border: none;
+        background: #bd0202;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+    .join .button .cancel{
+        display: inline-block;
+        width: 300px;
+        line-height: 24px;
+        padding: 20px 0;
+        border: none;
+        background: #999;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer
+    }
+    .join .allcheck{
+        width: 740px;
+        padding: 20px 0 20px 0;
+        font-weight: 600;
+        color:#333;
+        background: #fff; 
+        font-size: 1.05rem;
+        box-sizing: border-box;
+        position: absolute; left: -8px; bottom: 105px;
+        border: 1px dashed #ccc;
+    }
+
+
+
+    .join .allcheck span{
+        font-weight: 400;
+        color: #999;
+        font-size: .9em;
+    }
+
+    input[type=checkbox] + label::before {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: transparent;
+        border: 2px solid #999;
+        border-radius: 50%;
+        content: '';
+        margin: 0px 15px -6px 0px;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox] + label {
+        cursor: pointer;
+    }
+    input[type=checkbox]:checked + label::before {
+        background: #bd0202 url(../images/checked_1.png) center center no-repeat;
+        border: 2px solid #bd0202 ;
+    }
+
+    input:focus-visible {
+        outline: -webkit-focus-ring-color auto 0px;
+        }
+  
+        input:focus {outline: none;}
+

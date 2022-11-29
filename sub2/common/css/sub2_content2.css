@@ -1,0 +1,377 @@
+
+#content .sub2_tab{
+    width: 705px;
+    margin: 0 auto;
+}
+
+#content .sub2_tab ul{
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+#content .sub2_tab ul li a{
+    width: 350px;
+    padding: 15px 0;
+    float: left;
+    text-align: center;
+    line-height: 2em;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#content .sub2_tab ul li:hover a{
+    background: #bd0202;
+    border: 1px solid #bd0202;
+    color: #fff;
+}
+
+#content .sub2_tab ul li .current{
+    background: #bd0202;
+    border: 1px solid #bd0202;
+    color: #fff;
+}
+
+#content #housingAll,#const_All{
+    display: none;
+}
+
+/*표*/
+
+
+#content .table{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 70px 20px;
+}
+
+#content .table p{
+    margin-bottom: 50px;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+#content .table p::after{
+    content: '';
+    width: 200px;
+    height: 10px;
+    background: rgba(189, 2, 2, .3);
+    position: absolute; left: 60px; top: 35px;
+}
+
+#content .table tbody{
+    text-align: left;
+}
+
+#content .table tbody th{
+    width: 410px;
+    padding: 20px 0;
+    border-bottom: 2px solid #bd0202;
+}
+
+#content .table tbody th:nth-of-type(2){
+    width: 470px;
+}
+
+#content .table tbody th:nth-of-type(3){
+    width: 320px;
+}
+
+#content .table tbody td{
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 사업 */
+
+#content .house_back{
+    background: #f8f8f8;
+    margin-top: 70px;
+}
+
+#content .houseText {
+    margin-top: 100px;
+    width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+#content .houseText dl{
+    width: 550px;
+    text-align: justify;
+    float: left;
+}
+
+#content .houseText img{
+    width: 450px;
+    height: 500px;
+    float: right;
+    margin: 0px 0 60px 30px;
+    border-radius: 40px 0;
+}
+
+
+#content .houseText dl dt{
+    margin: 30px 0 50px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#content .houseText dl dd{
+    line-height: 2.4em;
+    margin-bottom: 25px;
+}
+
+
+/* 실적 */
+
+#content .result{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+#content h3{
+    font-size: 3em;
+    font-weight: 500;
+    color: #ccc;
+    display: block;
+    width: 1100px;
+    margin: 0 auto; 
+    padding-top: 70px;   
+}
+
+#content .result>p{
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 70px 0 50px 60px;
+}
+
+#content .result>p::after{
+    content: '';
+    width: 195px;
+    height: 10px;
+    background: rgba(189, 2, 2, .3);
+    position: absolute; left: 60px; top: 35px;
+}
+
+#content .result ul{
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+#content .result li{
+    width: 330px;
+    height: 260px;
+    border: 1px solid #ccc;
+    text-align: justify;
+    margin: 30px 15px;
+    float: left;
+    transition: all .5s;
+}
+
+#content .result li:hover{
+    transform: scale(1.02);
+    border:1px solid #bd0202;
+    box-shadow: 3px 5px 5px rgba(0,0,0,.3);
+}
+
+#content .result li img{
+    width: 330px;
+    height: 190px;
+}
+
+#content #housingAll .house_back dl{
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+#content #housingAll .house_back dl dt{
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 70px 0 40px 0px;
+}
+
+#content #housingAll .house_back dl span{
+    display: block;
+    float: left;
+    width: 72px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+#content #housingAll .house_back dl dd{
+    margin-bottom: 20px;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+.contentArea .more:hover{
+    border: #bd0202;
+    background: #bd0202;
+    color: #fff;
+}
+
+
+/* 건축 */
+#content .constAll{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+#content .constAll h3{
+    font-size: 3em;
+    font-weight: 500;
+    color: #ccc;
+    display: block;
+    width: 1100px;
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+#content #constAll .const_back{
+    background: #f8f8f8;
+    margin-top: 70px;
+    padding-bottom: 40px;
+}
+
+#content .constText {
+    margin-top: 100px;
+    width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#content .constText dl{
+    width: 550px;
+    text-align: justify;
+    float: left;
+}
+
+#content .constText img{
+    width: 450px;
+    height: 500px;
+    float: right;
+    margin: 0px 0 60px 30px;
+    border-radius: 40px 0;
+}
+
+#content .constText dl dt{
+    margin: 30px 0 50px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#content .constText dl dd{
+    line-height: 2.4em;
+    margin-bottom: 25px;
+}
+
+
+
+/* 팝업 */
+#content .result .pop ul li{
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: all .5s;
+}
+
+#content .result .pop ul li:hover .plus{
+    color: rgba(189, 2, 2, 1);
+}
+
+
+#content .pop .plus{
+    position: absolute; left: 140px; top: 50px;
+    color: rgba(189, 2, 2, 0)
+}
+
+#content .pop .plus i{
+    font-size: 2.5em;
+}
+
+
+#content .result .pop ul li a span{
+    display: block;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.pop .modal_box{
+        position: fixed; left: 0; top: 0; 
+        z-index: 40; 
+        width: 100%; 
+        height: 100%; 
+        background: #000; opacity: .7; 
+        display: none;
+        }
+
+    .pop .pop_btn{
+        position:absolute; z-index: 60; top:50%; 
+        margin-top: -100px; 
+        font-size: 100px; 
+        width: 100%; 
+        }
+
+    .pop .pop_btn a{
+        display: block; 
+        position: absolute; top:0; left:50%; 
+        color: #fff; 
+        opacity: .4; 
+        transition: all .5s;
+        display: none;
+        }
+
+    .pop .pop_btn a:hover{opacity: .9;}
+    .pop .pop_btn .pre{margin-left: -500px;}
+    .pop .pop_btn .next{margin-left: 430px;}
+
+    .pop .popup{
+         position: fixed; top: 50%; left: 50%; 
+         z-index: 60; 
+         margin: -300px 0 0 -300px; 
+         width: 600px; height: 600px;
+         background: #fff; 
+         box-shadow: 1px 3px 7px 0px #666;
+         border: 2px solid #bd0202;
+         display:none; 
+         }
+
+    .pop .popup img{
+         width: 400px;
+         height: 300px; 
+         padding: 60px 0 0 100px;
+        }
+    
+    .pop .popup dl{
+         width: 94%; margin:10px 3%; 
+         text-align: center;         
+        }
+    
+    .pop .popup dt{
+         font-size: 1.2em; 
+         font-weight: bold; 
+         margin: 30px 0 20px 0; 
+         }
+    .pop .popup dd{
+        font-size: 1.1em;
+        text-align: left;
+        line-height: 2em;
+        margin-left: 90px;
+    }
+
+
+    .pop .popup .close_btn{
+         position: absolute; top: 10px; right: 0px; 
+         display: block; 
+         overflow: hidden; 
+         display: block;
+         font-size: 1.3em;
+         width: 40px; 
+         height: 40px; 
+         padding: 9px 9px; 
+         }

@@ -1,0 +1,313 @@
+/*서브2 사업분야의 토목사업*/
+
+#content .titleArea p{
+    line-height: 2em
+}
+
+#content .contentArea{
+    width: 100%;
+}
+
+#content .contentArea .gall h3{
+    font-size: 1.5em;
+    color: #bd0202;
+    font-weight: 600;
+    padding : 7% 0 0 8%;
+    text-align: left;
+}
+
+#content .contentArea .gall .text{
+    background: #f8f8f8;
+    margin: 5% 0 14% 0;
+}
+
+#content .contentArea .civil_text img{
+    margin-top: 8%;
+}
+
+#content .contentArea .civil_text dl dt{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 6% 3%;
+}
+
+#content .contentArea .civil_text dl dd{
+    padding: 0 3%;
+    line-height: 1.75em;
+}
+
+
+/*tap*/
+
+#content .contentArea .sub2_tab{
+    text-align: center;
+    letter-spacing: 2px;
+    padding-bottom: 40px;
+    position: relative; left: 20px; top: 30px;
+   } 
+
+#content .sub2_tab .arrow{ 
+       display: block; 
+       background: #ccc; 
+       color:#fff;
+       width: 90%; 
+       padding: 4% 0;
+       text-align: center;
+       transition: all .5s ease-out; 
+   } 
+
+#content .sub2_tab .aList{
+       width: 90%;
+       display: none;
+       background: #fff;
+       position: absolute; left: 0px; top: 50px;
+       z-index: 60;
+   }
+
+   #content .sub2_tab .aList li a{
+       display: block;
+       text-align: center;
+       padding: 10px 0;
+       line-height: 1.5em;
+       border-bottom: 1px solid #ccc;
+   }
+
+
+/* 전체 */
+
+.contentArea .gall{
+    padding-bottom: 5%;
+}
+
+.contentArea #houseAll, #bridgeAll{
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.contentArea .gall strong{
+    font-size: 1.2em;
+    color: #ccc;
+    font-weight: 600;
+    margin: 20px 0 0 10px;
+}
+
+.contentArea .gall .pop_menu{
+    overflow: auto;
+}
+
+.contentArea .gall .pop_menu li{
+    position: relative;
+    margin-right: 5px;
+}
+
+.contentArea .gall .pop_menu span{
+    display: block;
+    width: 95%;
+    position: absolute; left: 0%; top: 40%;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+}
+
+.contentArea .gall dl dt{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 10% 0 5% 8%;
+}
+
+.contentArea .gall dd{
+    font-weight: 500;
+    padding: 0 8% 5% 8%;
+    line-height: 2em;
+    text-align: justify;
+}
+
+.contentArea .gall ul{
+    margin: 3% 0 0 6%;
+}
+
+.contentArea .gall li{
+    width: 30%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contentArea .gall li a{
+    display: block;
+    margin: 0 3px;
+}
+
+.contentArea .gall ul li dl{
+    margin-left: 10px;
+}
+
+.contentArea .gall ul li dt{
+    margin: 30px 0;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.contentArea .gall ul li dd span{
+    display: block;
+    width: 95%;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.contentArea .gall ul li dd{
+    margin-top: 5px;
+    font-size: 1.1em;
+    overflow: hidden;
+    line-height: 2em;
+}
+
+.contentArea .gall .aList{
+    display: none;
+}
+
+/*팝업*/
+
+#content .pop ul{
+    overflow: hidden;
+}
+
+#content .pop ul li{
+    border-radius: 20px;
+    position: relative;
+}
+
+
+#content .pop .modal_box{
+        position: fixed; left: 0; top: 0; 
+        z-index: 40; 
+        width: 100%; 
+        height: 100%; 
+        background: rgba(0,0,0,.7);
+        display: none; 
+        }
+
+#content .pop .pop_btn a{
+        display: block; 
+        position: absolute; top:0; left:50%; 
+        color: #fff; 
+        opacity: .4; 
+        transition: all .5s;
+        }
+
+#content .pop .popup{
+         position: fixed; top: 40%; left: 50%; 
+         z-index: 60; 
+         margin: -45% 0 0 -44%; 
+         width: 85%; height: 490px;
+         background: #fff; 
+         box-shadow: 1px 3px 7px 0px #666;
+         border: 3px solid #bd0202;
+        display:none;  
+         }
+
+#content .pop .popup img{
+         width: 70%;
+         margin: 18% 15% 0 15%;
+        }
+    
+#content .pop .popup dl{
+         width: 94%; 
+         text-align: left;
+        }
+    
+#content .pop .popup dt{
+         font-size: 1.25em; 
+         font-weight: bold; 
+         margin: 5% 0 5% 25px; 
+         }
+
+#content .pop .popup dd{
+        text-align: left;
+        line-height: 1.2em;
+        margin-left: 25px;
+    }
+
+#content .pop .popup .close_btn{
+         position: absolute; top: 5px; right: -15px; 
+         display: block; 
+         overflow: hidden; 
+         display: block;
+         font-size: 1.3em;
+         width: 40px; 
+         height: 40px; 
+         padding: 9px 9px; 
+         }
+
+/*pop2*/
+
+#content .pop2 ul{
+    overflow: hidden;
+}
+
+#content .pop2 ul li{
+    border-radius: 20px;
+    position: relative;
+}
+
+
+#content .pop2 .modal_box{
+        position: fixed; left: 0; top: 0; 
+        z-index: 40; 
+        width: 100%; 
+        height: 100%; 
+        background: rgba(0,0,0,.7);
+        display: none; 
+        }
+
+#content .pop2 .pop_btn a{
+        display: block; 
+        position: absolute; top:0; left:50%; 
+        color: #fff; 
+        opacity: .4; 
+        transition: all .5s;
+        }
+
+#content .pop2 .popup{
+         position: fixed; top: 40%; left: 50%; 
+         z-index: 60; 
+         margin: -45% 0 0 -44%; 
+         width: 85%; height: 460px;
+         background: #fff; 
+         box-shadow: 1px 3px 7px 0px #666;
+         border: 3px solid #bd0202;
+        display:none;  
+         }
+
+#content .pop2 .popup img{
+    width: 70%;
+    margin: 18% 15% 0 15%;
+        }
+    
+#content .pop2 .popup dl{
+         width: 94%; 
+         text-align: left;
+        }
+    
+#content .pop2 .popup dt{
+    font-size: 1.25em; 
+    font-weight: bold; 
+    margin: 5% 0 5% 25px; 
+         }
+#content .pop2 .popup dd{
+    text-align: left;
+    line-height: 1.2em;
+    margin-left: 25px;
+    }
+
+#content .pop2 .popup .close_btn{
+         position: absolute; top: 5px; right: -15px; 
+         display: block; 
+         overflow: hidden; 
+         display: block;
+         font-size: 1.3em;
+         width: 40px; 
+         height: 40px; 
+         padding: 9px 9px; 
+         }

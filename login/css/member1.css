@@ -1,0 +1,159 @@
+body{background-color: #fff; 
+    color:#333
+}
+a{text-decoration: none; color: #333}
+p{text-align: center}
+
+#content{
+    width: 500px; 
+    margin: 0 auto;
+    padding: 60px; 
+    font-family: 'Noto Sans KR', sans-serif; 
+    border: 1px solid #eee;
+    box-shadow: 2px 5px 8px #ccc;
+    border-radius: 10px;
+}  
+
+#content h2{
+    font-size: 24px; 
+    margin: 10px 0; 
+    color: #333; 
+    text-align: center;
+    position: relative;
+}
+
+h2::before{
+    content: ''; 
+    position: absolute; top: 5px; left: 170px; 
+    width: 5px; height: 28px;
+    background: #bd0202;
+  }  
+  
+
+.logo{
+    margin: 50px auto;
+    display: block; 
+    width: 180px; height: 30px;
+    background: url(../../common/images/logo_180_color_balck.png);
+}
+#title{text-align: center;
+    margin-bottom: 40px;}
+
+fieldset{width: 500px; margin: 0 auto; border: none}
+input{border: 1px solid #eee; 
+    display: block; 
+    margin: 20px 0; 
+    width: 480px; height: 50px; 
+    background-color: #fff; 
+    padding: 0 12px; 
+    font-size: 16px; 
+    border-radius: 3px; 
+    outline: none
+}
+
+.signup,.go_join, .find{display: block; width: 500px; background: #bd0202; color: #fff; text-align: center; transition: all .5s}
+.signup, .find{height: 50px; margin-bottom: 10px; cursor: pointer}
+.go_join{height: 40px; line-height: 40px; margin: 30px auto; border-radius: 3px}
+.signup:hover,.go_join:hover, .find:hover{background: #fff;border: 1px solid #eee;}
+
+ul{list-style: none; overflow: hidden; width: 500px; margin: 0 auto; padding: 0}
+ul li{margin: 30px auto; overflow: hidden; float: left; text-align: center}
+ul li:last-child{float: right}
+ul li span{margin-left: 20px}
+ul li i{margin-right: 8px}
+
+#join_button{position: relative; margin-top: 50px}
+#join_button::before{
+    content: ''; width: 500px; height: 1px; background: #eee; position: absolute; top: -10px; left: 50%; margin-left: -250px}    
+
+/*find*/
+.telBox {clear: both;margin: -20px 0}
+.telBox select {
+    width: 135px; border: 1px solid #eee; 
+    font-size: 18px; color: #888; height: 60px; 
+    background: #fff; 
+    height: 50px; padding: 8px
+}
+.telBox input{
+    width: 145px; 
+    display: inline
+}
+
+#id_input_button .go{
+    margin-left: -25%;
+}
+
+#id_input_button .go li { margin: 10px 0;}
+
+#id_input_button .go li a{
+    margin-right: 30px;
+}
+#id_input_button .go li::before{
+    content: '|';
+    width: 1px;
+    height: 3px;
+    color: #666;
+    position: relative; left: 74px; top: 0;
+    z-index: 10;
+}
+
+.loadtexton{
+    text-align: left;
+    border: 1px dashed #ccc; 
+    width: 450px; overflow: hidden; margin: 20px 0 20px -250px; 
+    position: relative; left: 50%; border-radius: 10px; display: block; 
+    padding: 30px 20px; line-height: 1.5em;
+    list-style: none;
+}
+
+    .loadtexton strong{
+        font-size: 18px;
+        color: #bd0202;
+        padding-bottom: 30px;
+        line-height: 2em;
+    }
+    .loadtexton li:nth-of-type(1){
+        margin-top: 10px;
+    }
+
+
+    .loadtexton strong:nth-of-type(3){
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .loadtexton span{
+        font-weight: bold;
+        line-height: 2em;
+        font-size: 16px;
+    }
+
+#join_button{
+    width: 80%;
+    /* border: 1px dashed #ccc; */
+    padding: 10px;
+    margin: 45px 6% 15px 6%;
+}
+
+#join_button a{
+    margin: 10px 0 0 10%;
+    display: inline-block;
+    padding: 3px 0 10px 0;
+}
+
+#join_button span{
+    color: #bd0202;
+    margin-right: 70px;
+    font-weight: 600;
+}
+
+input:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+    }
+    input:focus {outline: none;}
+
+    .signup:hover, .go_join:hover, .find:hover {
+        background: #bd0202;
+        border: 1px solid #eee;
+    }
+

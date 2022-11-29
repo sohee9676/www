@@ -1,0 +1,11 @@
+.subNav ul{
+    overflow: hidden;
+    margin-left: 18%;
+}
+
+.subNav ul li{
+    float: left;
+    width: 35%;
+    text-align: center;
+    margin-right: 4%;
+}

@@ -1,0 +1,364 @@
+.videoBox{
+	width: 100%;
+  height: 100%;
+	overflow: hidden;
+	position: absolute;
+} 
+
+.videoBox #imgBG{
+  position: fixed;
+  left: 50%;
+  top:50%;
+	width: auto;
+  min-width: 100%;
+  min-height: 100%;
+	height: auto;
+	overflow: hidden;
+  transform: translate(-50%,-50%);
+  z-index: -100;
+}
+
+.videoBox #imgBG2{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  overflow: hidden;
+  transform: translate(-50%,-50%);
+  z-index: -100;
+  display: none;
+}
+
+.title{
+	font-size: 5em;
+	letter-spacing: 2px;
+	color: #fff;
+	text-shadow: 2px 3px 3px rgb(204, 191, 2);
+	position: absolute; left: 49%; top: 50%;
+	z-index: 10;
+	transform: translate(-50%,-50%);
+	transition: all .5s;
+  }
+  
+  .videoBox #imgBG2{
+	display: none;
+  }
+  
+
+#content .trailer{
+  background: rgba(0, 0, 0, .8);
+}
+
+.videoBox #imgBG2{
+    display: none;
+  }
+
+
+#content .trailer>h3{
+  font-size: 5em;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 2px 3px 3px rgb(255, 255, 255);
+  position: absolute; left: 42%; top: 50%;
+  z-index: 10;
+  transform: translate(-50%,-50%);
+}
+
+#content .trailerInner h4{
+  font-size: 2.5em;
+  padding: 5% 5% 2% 5%;
+  text-shadow: 2px 2px 2px rgb(236, 229, 187);
+  letter-spacing: 7px;
+  color: rgb(255, 217, 0);
+}
+
+#content .trailerInner {
+  width: 90%;
+  padding: 0 5%;
+}
+
+#content .trailerInner>p{
+  display: block;
+  line-height: 2em;
+  width: 90%;
+  padding: 0 5%;
+  font-size: 1.3em;
+  margin-bottom: 2%;
+}
+
+#content .trailer .subPop{
+  width: 100%;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+#content .trailer .subPop_menu{
+  overflow: hidden;
+}
+
+#content .trailer .subPop_menu li{
+  border: 3px solid rgb(219, 216, 10) ;
+  width: 35%;
+  padding: 4%;
+  margin: 2%;
+  float: left;
+  border-radius: 4% 93% 6% 95% / 94% 4% 92% 5%;
+  transition: all .5s;
+  position: relative;
+}
+
+#content .trailer .subPop_menu li:hover img{ 
+  transform: scale(1.05);
+}
+
+#content .trailer .subPop_menu li .video{
+  width: 90%;
+  padding: 0 5%;
+}
+
+
+#content .trailer .subPop_menu li .video img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all .5s;
+  position: relative;
+}
+
+
+#content .trailer .subPop_menu li .video span{
+  display: block;
+  font-size: 4.2em;
+  position: absolute; left: 50%; top: 38%;
+  transform: translate(-50%,-50%);
+  transition: all .5s;
+  color: #ccc;
+}
+
+#content .trailer .subPop_menu li:hover span{
+  color: rgb(209, 12, 12); 
+ }
+
+#content .trailer .subPop_menu dl{
+  width: 90%;
+  color: #fff;
+  padding: 2% 5%;
+}
+
+#content .trailer .subPop_menu dt{
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 5% 0;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+}
+
+#content .trailer .subPop_menu dd{
+  text-align: left;
+  line-height: 2em;
+  letter-spacing: 1px;
+  font-family: 'Noto Sans KR', sans-serif'
+}
+
+#content .trailer .modal_box{
+  position: fixed; left: 0; top: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+  display: none;
+  /* display: block; */
+}
+
+#content .trailer .sub_popup{
+  position: fixed; 
+  left: 18%; top: 25%;
+  transition: translate(-50%,-50%);
+  width: 60%;
+  /* height: 380px; */
+  display: none;
+  z-index: 60;
+  background: rgb(67, 45, 70);
+  overflow: hidden;
+  padding: 50px 30px 30px 40px;
+}
+
+#content .trailer .sub_popup .txt{
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  color: #fff;
+}
+
+#content .trailer .sub_popup .youtube_box{
+  width: 60%;
+  float: left;
+}
+
+#content .trailer .sub_popup .youtube_box div{
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  height: 0;
+}
+
+#content .trailer .sub_popup .youtube_box div iframe{
+  position: absolute; left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+#content .trailer .sub_popup .txt dl{
+  padding: 5% 0 5% 3%;
+  width: 35%;
+  float: right;
+}
+
+#content .trailer .sub_popup .txt dt{
+  padding: 3% 0;
+  font-size: 1.4em;
+  color: rgb(178, 75, 201);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+}
+
+#content .trailer .sub_popup .txt dd{
+  line-height: 1.9em;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+}
+
+#content .trailer .sub_popup .close_btn{
+  position: absolute; top: 3%; right: 2%;
+  display: block;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  z-index: 60;
+  font-size: 2.7em;
+}
+
+
+@media screen and (max-width:1400px) {
+  #content .trailer .sub_popup .txt dt{
+    font-size: 1.1em;
+  }
+}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+     .title{
+        font-size: 4em;
+      }
+      #content .trailer .sub_popup .txt dt{
+        font-size: 1em;
+      }
+
+      #content .music .music_content li a .image{
+        width: 20%;
+        padding-bottom: 20%;
+      }
+      #content .music .music_content .music_list{
+        width: calc(50% - 4rem)
+      }
+
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+     .title{
+        font-size: 3em;
+      }
+
+      #content .trailer .sub_popup{
+      height: 400px;
+      }
+
+      #content .trailer .subPop_menu li {
+        width:auto; 
+        float:none;
+    }
+
+    #content .trailer .sub_popup .youtube_box{
+      width: 80%;
+      padding: 0 10%;
+      float: none;
+    }
+    
+    #content .trailer .sub_popup .youtube_box div{
+      position: relative;
+      width: 100%;
+      padding-top: 50%;
+      height: 0;
+    }
+
+    #content .trailer .sub_popup .txt dl{
+      padding: 2% 10%;
+      width: 80%;
+      float: none;
+    }
+
+    #content .trailer .sub_popup .txt dt{
+      font-size: 1.1em;
+    }
+
+  
+  }
+  
+/* 소형 테블릿 */
+
+@media screen and (max-width:786px) {
+
+  #content .trailer{
+    background: rgba(0, 0, 0, 1);
+  }
+
+  #content .trailer .subPop_menu li{
+    border-radius: 6% 90% 3% 94% / 90% 10% 85% 7%;
+    padding: 8%;
+  }
+
+  #content .trailer .sub_popup .txt dl{
+    padding-bottom: 1%;
+  }
+
+  #content .trailer .sub_popup .txt dt{
+    padding: 5% 0;
+  }
+
+    .videoBox #imgBG {
+        display: none;
+      }
+    
+       .title{
+        display: block;
+      }
+    
+      .videoBox #imgBG2 {
+        display: block;
+      }
+
+     
+    
+}
+
+/* 모바일 */
+
+@media screen and (max-width:640px) {
+
+    }
+
+
+@media screen and (max-width:480px) {
+    #wrap { min-width:320px; }
+
+      #content .trailer .subPop_menu li {
+        width: auto
+    }
+}

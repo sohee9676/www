@@ -1,0 +1,128 @@
+/* 기업정보 본문 영역 */
+
+
+#content .contentArea h3{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+#content .contentArea img{
+    width: 520px;
+    height: 350px;
+    background: rgb(242, 138, 138);
+}
+
+/**/
+@keyframes value {
+    from {transform: translateY(100px);
+        opacity: 0;
+    }
+    to {transform: translateY(0);
+        opacity:1;
+    }
+}  
+
+#content .contentArea .value01.move{
+    animation: value 1s;
+}
+
+
+/*value 01*/
+
+#content .contentArea .value01{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: justify;
+} 
+
+#content .contentArea .value01 ul{   
+    overflow: hidden; 
+    margin-left: 180px;
+}
+
+#content .contentArea .value01 ul li{
+    width: 200px;
+    height: 280px;
+    color: #666;
+    margin: 0 40px 130px 40px;
+    float: left;
+    position: relative;
+    transition: all .5s ease-out;
+}
+
+#content .contentArea .value01 dl{
+    text-align: center;
+}
+
+#content .contentArea .value01 dt{
+    margin-top: 65px;
+    font-size: 1.45em;
+    font-weight: 600;
+}
+
+#content .contentArea .value01 dt span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#content .contentArea .value01 dd{
+    color: #999;
+}
+
+#content .contentArea .value01 i{
+    display: block;
+    font-size: 2.3em;
+    margin: 15px 0;
+    color:#bd0202;
+}
+
+/*value 02*/
+
+#content .contentArea .value02{
+    width: 1200px;
+    margin: 0 auto
+}
+
+#content .contentArea .value02 li{
+    margin: 0 90px 100px 30px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+#content .contentArea .text01, .text02{
+    width: 480px;
+}
+
+#content .contentArea .con01 img{
+    float: left;
+}
+
+#content .contentArea .text01{
+    float: right;
+}
+
+#content .contentArea .con02 img{
+    float: right;
+}
+
+#content .contentArea .value02 dl dt{
+    padding: 20px 0 40px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #bd0202;
+}
+
+#content .contentArea .value02 dd{
+    line-height: 2em;
+} 
+
+#content .contentArea li img{
+    transition: all .5s ease-out;    
+}
+
+#content .contentArea .value02 li:hover img{
+    transform: scale(1.05);
+}
+
+
+

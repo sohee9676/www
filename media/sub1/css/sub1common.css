@@ -1,0 +1,39 @@
+
+.down{
+    display: block; 
+    font-size: 16px; position: absolute; 
+	left:50%; margin-left: -80px; bottom: 10%;
+    padding-top: 50px;
+	animation:ani 1s infinite  alternate;
+}
+
+@keyframes ani {
+	0% { transform:scale(1); opacity:1; color:#fff;}
+	100% { transform:scale(1.1); opacity:0.8; color:#888;}
+}	
+
+
+
+/*on*/
+#headerArea.on{
+	background: rgba(22, 22, 22, 0.8); 
+	transition: all .5s ;
+}	
+
+#footerArea .footerInner{
+	background: rgba(22, 22, 22, 1); 
+}
+
+
+#footerArea .footerInner .topMove{
+	background: rgba(22, 22, 22, 1); 
+}
+
+
+#headerArea #gnb ul li a:hover{
+	background: rgb(227, 240, 50);
+	background: -webkit-linear-gradient(left, #eb590a, #e0b19c);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: rgb(225, 50, 240);
+}

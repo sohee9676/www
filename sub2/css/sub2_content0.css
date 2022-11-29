@@ -1,0 +1,129 @@
+.contentArea .list01{
+    width: 1920px;   
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+@keyframes list_text {
+    from {transform: translateX(-100px);}
+    to {transform: translateX(0);}
+}
+
+@keyframes list_after {
+    from {transform: translateX(100px);}
+    to {transform: translateX(0);}
+}
+
+.contentArea .civil.move dl{
+    animation: list_text 1s;
+}
+
+.contentArea .civil.move p::after{
+    animation: list_after 1.2s;
+}
+
+.contentArea .civil.move li>p{
+    animation: list_text 1s;
+}
+
+.contentArea .const.move dl{
+    animation: list_text 1s;
+}
+
+.contentArea .const.move li>p::after{
+    animation: list_after 1s;
+}
+
+.contentArea .const.move li>p{
+    animation: list_text 1s;
+}
+
+.contentArea .plant.move dl{
+    animation: list_text 1s;
+}
+
+.contentArea .plant.move p::after{
+    animation: list_after 1s;
+}
+
+.contentArea .plant.move li>p{
+    animation: list_text 1s;
+}
+
+.contentArea .list01 div{
+    width: 100%;
+    height: 300px;
+    margin: 0 0 340px 0px;
+    position: relative; 
+}
+
+.contentArea .list01 div:nth-of-type(1){
+    background: url(../common/images/main000_02.jpg) no-repeat;
+}
+
+.contentArea .list01 div:nth-of-type(2){
+    background: url(../common/images/main000_01.jpg) no-repeat;
+}
+
+.contentArea .list01 div:nth-of-type(3){
+    background: url(../common/images/sub2_main.jpg) no-repeat;
+
+}
+
+.contentArea .list01 li{
+    line-height: 2.5em;
+}
+
+.contentArea .list01 p{
+    display: block;
+    font-size: 2.3em;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.contentArea .list01 p::after{
+    content: '';
+    font-size: 3em;
+    font-weight: 600;
+    color: #f8f8f8;
+}
+
+.contentArea .list01 .civil p::after{
+    content: 'CIVIL ENGINEERING';
+    position: absolute; left: 200px; top: 350px; z-index: -10;
+}
+
+.contentArea .list01 .const p::after{
+    content: 'CONSTRUCTION';
+    position: absolute; left: 300px; top: 350px; z-index: -10;
+
+}
+
+.contentArea .list01 .plant p::after{
+    content: 'PLANT';
+    position: absolute; left: 900px; top: 350px; z-index: -10;
+
+}
+
+.contentArea .list01 p:nth-of-type(1){
+    position: relative; left: 300px; top: 160px;
+}
+
+
+.contentArea .list01 li dl{
+    width: 1200px;
+    text-align: justify;
+    margin: 170px 0 0 350px;
+}
+
+.contentArea .list01 li dl dt{
+    font-size:1.3em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contentArea .list01 li dl dd{
+    margin-top: 80px;
+    text-align: justify;
+}
+

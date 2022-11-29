@@ -1,0 +1,55 @@
+.faq{
+    border-bottom:1px solid #ddd;
+    padding: 70px 0;
+}  
+
+.faq h3{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.faq .hgroup{
+    position:relative;
+    margin:0 0 20px 0;
+    color: #666;    
+}  
+.faq .hgroup .all{
+    position:absolute; top:5px; right:10px;  
+    font-size: 20px; 
+}  
+
+.faq .q{
+    border-top:1px solid #ddd;
+}  
+
+.faq .q span{
+    float: right;
+    margin-right: 20px;
+}  
+.faq .q a.trigger{
+    display:block;
+    padding: 20px 0 20px 30px;
+    background:#fafafa;
+    font-size: 1.1em;
+}  
+.faq .hide .q a.trigger{
+    font-weight:normal;
+    background:none;
+}  
+
+.faq .q a strong{
+    color: #bd0202;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.faq .q a.trigger:active,  
+.faq .q a.trigger:focus{background:#f8f8f8;}  
+.faq .a{
+    padding:30px;
+    line-height:1.75em; 
+    text-align: justify; 
+    overflow:hidden; 
+    display: none;
+} 

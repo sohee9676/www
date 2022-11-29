@@ -1,0 +1,143 @@
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0 ;
+}
+
+.top_section{
+    overflow:hidden ;
+    margin: 30px 0;
+}
+
+.top_section #total_list{
+    float: left;
+}
+
+.top_section .list_count{
+    float: right;
+    border-radius: none;
+}
+
+.top_section .list_count #scale{
+    padding: 5px 15px;
+}
+
+#scale:focus-visible {
+    outline: none;
+}
+
+.top_section .list_count #scale .back{
+    background: #eee;
+    padding: 2px 0;
+}
+
+.main_board #list_top_title{
+    overflow: hidden;
+    background: #eee;
+    padding: 5px 0;
+}
+
+.main_board #list_top_title li{
+    float: left;
+    padding: 15px 2.5%;
+    text-align: center;
+}
+
+.main_board #list_top_title #list_title1, #list_item1{
+    width: 5%;
+}
+
+.main_board #list_top_title #list_title2, #list_item2{
+    width: 38%;
+}
+
+.main_board #list_top_title #list_title3, #list_item3{
+    width: 12%;
+}
+.main_board #list_top_title #list_title4, #list_item4{
+    width: 12%;
+}
+
+.main_board #list_top_title #list_title5, #list_item5{
+    width: 8%;
+}
+
+.main_board #list_content #list_item li#list_item2{
+    text-align: left;
+}
+
+#page_button #page_num{
+    text-align: center;
+    padding: 20px 0;
+}
+
+#button a{
+    display: block;
+    width: 90px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 5px 0;
+    float: right;
+    box-sizing: border-box;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#button a.write{
+    background: #bd0202;
+    color: #fff;
+    border: 1px solid #bd0202;
+}
+
+.board{
+    padding: 20px 0;
+    background: rgb(252, 252, 252);
+    overflow: hidden;
+}
+
+form {
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 50px 0;
+    text-align: center;
+}
+
+select{
+    border: 1px solid #ccc;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+
+input{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+input[type="text" i] {
+    padding: 7px 30px 7px 10px;
+}
+
+input[type="submit" i] {
+    border: 1px solid #bd0202;
+    background-color: #bd0202;
+    color: #fff;
+    padding: 5px 10px 6px 10px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+.main_board #list_content #list_item{
+    overflow: hidden;
+}
+
+.main_board #list_content #list_item li{
+    float: left;
+    padding: 18px 2.5%;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}

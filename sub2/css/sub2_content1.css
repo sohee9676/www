@@ -1,0 +1,158 @@
+/*서브2 사업분야의 토목사업*/
+
+#content .titleArea p{
+    line-height: 2em
+}
+
+#content .contentArea{
+    width: 100%;
+}
+
+#content .contentArea .gall h3{
+    font-size: 4em;
+    color: #f1f1f1;
+    margin: 50px 0 40px 600px;
+}
+
+#content .contentArea .sub2_tab>ul{
+    width: 1025px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*tap 후보 1*/
+#content .sub2_tab ul li a{
+    width: 200px;
+    padding: 15px 0;
+    float: left;
+    text-align: center;
+    line-height: 2em;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+#content .sub2_tab ul li a:hover{
+    background: #bd0202;
+    color: #fff;
+    border: 1px solid #bd0202;
+}
+
+#content .sub2_tab ul li .current{
+    background: #bd0202;
+    color: #fff;
+    border: 1px solid #bd0202;
+}
+
+.contentArea .more{   
+    display: block;
+    width: 1100px;
+    padding: 20px 0;
+    background: #ccc;
+    color: #fff;
+    position: absolute; right: 60px; bottom: -40px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.contentArea .more:hover{
+    border: #bd0202;
+    background: #bd0202;
+    color: #fff;
+}
+
+
+/* 전체 */
+
+.contentArea .gall{
+    padding-bottom: 150px;
+}
+
+.contentArea #houseAll,#bridgeAll,#airportAll,#subwayAll,#environAll{
+    width: 1200px;
+    margin: 0 auto;
+    position:relative;
+    padding-bottom: 70px;
+    display: none;
+}
+
+
+.contentArea .gall strong{
+    font-size: 1.5em;
+    color: #ccc;
+    font-weight: 600;
+    margin: 20px 0 0 10px;
+}
+
+.contentArea .gall ul{
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.contentArea .gall li{
+    width: 340px;
+    height: 520px;
+    border-top: 2px solid #ccc;
+    float: left;
+    margin:20px;
+}
+
+.contentArea .gall li img{
+    margin: 20px 0 0 10px;
+    width: 320px;
+    height: 190px;
+    transition: all .5s ease-out;
+}
+
+.contentArea .gall li:hover img{
+    transform: scale(1.05);
+}
+
+.contentArea .gall ul li dl{
+    margin-left: 10px;
+}
+
+.contentArea .gall ul li dt{
+    margin: 30px 0;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.contentArea .gall ul li dd span{
+    display: block;
+    width: 80px;
+    float: left;
+    margin-right: 20px;
+    font-size: 18px;
+
+}
+.contentArea .gall ul li dd{
+    margin-top: 5px;
+    font-size: 18px;
+    overflow: hidden;
+    line-height: 2em;
+}
+
+.contentArea .gall .aList{
+    display: none;
+}
+
+/* h3 */
+
+
+.contentArea .gall #bridgeAll h3{
+    margin: 50px 0 40px 50px;
+}
+
+.contentArea .gall #airportAll h3{
+    margin: 50px 0 40px 800px;
+}
+
+.contentArea .gall #subwayAll h3{
+    margin: 50px 0 40px 50px;
+}
+
+.contentArea .gall #environAll h3{
+    margin: 50px 0 40px 700px;
+
+}

@@ -1,0 +1,249 @@
+.videoBox{
+	width: 100%;
+  height: 100%;
+	overflow: hidden;
+	position: absolute;
+} 
+
+.videoBox #imgBG{
+  position: fixed;
+  left: 50%;
+  top:50%;
+	width: auto;
+  min-width: 100%;
+  min-height: 100%;
+	height: auto;
+	overflow: hidden;
+  transform: translate(-50%,-50%);
+  z-index: -100;
+}
+
+.videoBox #imgBG2{
+  position: absolute;
+  left: 50%;
+  top:50%;
+	width: auto;
+  min-width: 100%;
+  min-height: 100%;
+	height: auto;
+	overflow: hidden;
+  transform: translate(-50%,-50%);
+  z-index: -100;
+  display: none;
+}
+
+ .title{
+	font-size: 5em;
+	letter-spacing: 2px;
+	color: #fff;
+	text-shadow: 2px 3px 3px rgb(204, 191, 2);
+	position: absolute; left: 48%; top: 50%;
+	z-index: 10;
+	transform: translate(-50%,-50%);
+	transition: all .5s;
+  }
+  
+  .videoBox #imgBG2{
+	display: none;
+  }
+  
+  #content .about{
+    background: rgba(0,0,0,.8);
+    padding: 80px 0;
+  }
+
+  #content .about h4{
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    letter-spacing: 7px;
+    margin-left: 6%;
+    color: rgb(255, 217, 0);
+  }
+
+  #content .about h4::after{
+    content: ': The story of Rapunzel';
+    font-size: 1.5rem;
+    margin-left: 1%;
+    letter-spacing: 2px;
+  }
+
+  #content .about .aboutInner{
+    width: 100%;
+  }
+
+  #content .about .aboutInner p{
+    line-height: 2.4em;
+    width: 90%;
+    overflow: hidden;
+  }
+
+  #content .about .plot1{
+    width: 90%;
+    padding: 0 5%;
+    position: relative; 
+    overflow: hidden;
+  }
+
+  #content .about .plot_text{
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    padding: 2%;
+    margin: 3% 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #000;
+    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #content .about .plot_text:hover{
+  box-shadow: 4px 4px #eadb53, 5px 5px #ead353, 6px 6px #ead353;
+  transform: translateX(-3px);
+}
+
+  #content .about .plot_text img{
+    width: 30%;
+    float: left;
+    margin: 0 3%;
+    border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+  }
+
+  #content .about .plot_text p{
+    display: block;
+    float: left;
+    width: 60%;
+    margin: 0 2%;
+    overflow: hidden;
+  }
+
+  #content .about .plot_text:nth-of-type(2) img{
+    float: right;
+    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+  }
+
+  #content .about .plot_text:nth-of-type(4) img{
+    float: right;
+  }
+
+  #content .about .plot2{
+    background: url(../images/sub_gall01.png)no-repeat top;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-attachment: fixed;
+    margin-top: 2%;
+  }
+
+  #content .about .plot2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #content .about .plot3{
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 3%;
+  } 
+
+  #content .about .plot3 .plot_text p{
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  #content .about .plot3 p{
+    text-align: justify;
+  }
+
+
+/* 중간 */
+@media screen and (max-width:1700px) {
+   
+  #content .about .plot_text p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+  #content .about .plot_text p{
+     -webkit-line-clamp: 4;
+     overflow: hidden;
+     padding-bottom:0;
+  }
+
+  .videoBox .title{
+    font-size: 4em;
+  }
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+   .title{
+    font-size: 3em;
+  }
+
+  #content .about .plot_text{
+  border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+  }
+
+  #content .about .plot_text img{
+    width: 90%;
+    float: none;
+    margin:5%;
+  }
+
+  #content .about .plot_text p{
+    width: 90%;
+    margin: 2% 5%;
+    float: none;
+    overflow: hidden;
+  }
+
+  #content .about .plot2{
+    display: none;
+  }
+
+  }
+
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+  .videoBox #imgBG {
+    display: none;
+  }
+
+  .title{
+    display: block;
+  }
+
+  .videoBox #imgBG2{
+    display: block;
+  }
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  #content .about .plot_text p{
+     display: -webkit-box;
+     -webkit-box-orient: vertical;
+     -webkit-line-clamp: 5;
+     overflow: hidden;
+     text-overflow: ellipsis;
+  }
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+ #wrap { min-width:320px; }
+}

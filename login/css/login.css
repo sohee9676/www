@@ -1,0 +1,119 @@
+body{background-color: #fff;}
+.logo{
+    margin: 50px auto;
+    display: block; 
+    width: 180px; height: 30px;
+    background: url(../../common/images/logo_180_color_balck.png);
+}
+#content{
+    width: 500px; 
+    margin: 0 auto;
+    padding: 60px; 
+    font-family: 'Noto Sans KR', sans-serif; 
+    border: 1px solid #eee;
+    box-shadow: 2px 5px 8px #ccc;
+    border-radius: 10px;
+}  
+
+#content h3{
+    font-size: 24px; 
+    margin: 10px 0 50px 0px; 
+    color: #333; 
+    text-align: center;
+    position: relative;
+}
+
+h3::before{
+  content: ''; 
+  position: absolute; top: 5px; left: 195px; 
+  width: 5px; height: 28px;
+  background: #bd0202;
+}
+
+#id_pw_input{
+    padding-bottom: 20px;
+}
+
+#id_pw_input .login_input{
+    width: 80%;
+    padding: 15px;
+    margin-left: 5%;
+    border: 1px solid #eee;
+}
+#id_pw_input ul li{
+    margin: 10px;
+}
+input[type="text" i] {
+    padding: 2px;
+    border-color: #999;
+}
+
+input:focus, textarea:focus {
+    outline-color: rgba(189,2,2, .5);
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+#login_button{
+    width: 80%;
+    padding: 12px 7px;
+    border: none;
+    margin: 0 0 30px 7%;
+    background: rgb(189, 2, 2);
+    text-align: center;
+    
+}
+
+#login_button button{
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+#join_button{
+    width: 80%;
+    border: 1px dashed #ccc;
+    padding: 10px;
+    margin: 45px 6% 15px 6%;
+}
+
+#join_button a{
+    margin: 10px 0 0 10%;
+    display: inline-block;
+    padding: 3px 0 10px 0;
+}
+
+#join_button span{
+    color: #bd0202;
+    margin-right: 50px;
+    font-weight: 600;
+}
+
+
+.find{
+    /* overflow: hidden; */
+    margin-left: 26%;
+}
+
+.find li a{
+    margin-right: 30px;
+}
+.find li:nth-of-type(1):after{
+    content: '|';
+    width: 1px;
+    height: 3px;
+    color: #666;
+    position: relative; left: -160px; top: 0;
+    z-index: 10;
+}
+
+input:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+    }
+    input:focus {outline: none;}

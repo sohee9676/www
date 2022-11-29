@@ -1,0 +1,352 @@
+<? 
+    session_start(); 
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>SM동아건설산업</title>
+
+<link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+<link rel="apple-touch-startup-image" href="./startup.png">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/swiper.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="https://kit.fontawesome.com/e960e8ad99.js" crossorigin="anonymous"></script>
+<script src="./js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+ 
+ 
+    <div id="wrap">
+        <header id="headerArea">
+            <div class="header_top"> 
+                <h1><a class="hidden" href="index.html">로고</a></h1>
+                <a href="#" class="menu_ham"><span></span></a>      
+            </div>    
+                
+            <nav id="gnb">
+                <ul class="login">
+                    <?
+                    @extract($_POST);
+                    @extract($_GET);
+                    @extract($_SESSION);
+                
+                
+                    if(!$userid) //세션변수
+                    {
+                 ?>
+
+                    <li><a href="./login/login_form.php">LOGIN</a></li>
+                    <li><a href="./member/join.html">JOIN</a></li>
+                </ul>
+
+                <?
+                    }
+                    else
+                    {
+                    ?>
+                <ul>
+                    <li><a href="./login/logout.php">Logout</a></li>
+                    <li><a href="./member/member_form_modify.php">정보수정</a></li>
+                </ul>
+            <?
+                }
+            ?>
+
+                <ul class="mainMenu">  
+                    <li class="depth1"><h3><a href="#">회사소개<span><i class="fa-solid fa-chevron-down"></i></span></a></h3>
+                        <ul>
+                            <li><a href="./sub1/sub1_1.html">기업정보</a></li>
+                            <li><a href="./sub1/sub1_2.html">CEO 인사말</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><h3><a href="#">사업분야<span><i class="fa-solid fa-chevron-down"></i></span></a></h3>
+                        <ul>
+                            <li><a href="./sub2/sub2_1.html">토목사업</a></li>
+                            <li><a href="./sub2/sub2_2.html">건축사업</a></li>
+                            <li><a href="./sub2/sub2_3.html">플랜트사업</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><h3><a href="#">기술경영<span><i class="fa-solid fa-chevron-down"></i></span></a></h3>
+                        <ul>
+                            <li><a href="./sub3/sub3_1.html">품질경영</a></li>
+                            <li><a href="./sub3/sub3_2.html">환경경영</a></li>
+                            <li><a href="./sub3/sub3_3.html">안전경영</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1 last"><h3><a href="#">고객지원<span><i class="fa-solid fa-chevron-down"></i></span></a></h3>
+                        <ul>
+                            <li><a href="./sub4/sub4_1.html">자주하는 질문</a></li>
+                            <li><a href="./sub4/sub4_2.html">찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+            
+        </header>
+
+        <div class="main">
+            
+            <!--비주얼영역-->
+            
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/main01x2.png" width="100%" alt="메인비주얼1">
+                        <span>무한가치를 창조하는 <br>세계적 E&C Contractor</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/main02x2.png" width="100%" alt="메인비주얼2">
+                        <span>Dong Ah's impressive <br>global works for humankind</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/main03x2.png" width="100%" alt="메인비주얼3">
+                        <span>무한가치를 창조하는 <br>세계적 E&C Contractor</span>
+                    </div>
+                </div>
+
+                  <!--Add Pagination --> 
+                    <div class="swiper-pagination"></div>
+
+            </div> 
+
+        </div>
+
+        <article id="content">
+            <h2 class="hidden">본문콘텐츠영역</h2>    
+        
+           <!--본문--> 
+
+           <section class="value">
+                <div class="valueInner">
+                    <h3>WHO WE ARE?</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="value_img1">
+                                </div>                            
+                                <dl>
+                                    <dt>기술개발</dt>
+                                    <dd>진정한 기술 경쟁력을 구축하여 
+                                        최고의 가치를 선사합니다.</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="value_img2">
+                                </div>
+                                <dl>
+                                    <dt>미래실현</dt>
+                                    <dd>파트너 협력으로 시대를 앞서 
+                                        스마트 혁신을 이끌어갑니다.</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="business">
+                <div class="business_box">
+                    <h3>BUSINESS</h3>
+                    <div class="boxInner">
+                        <ul>
+                            <li>
+                               <a href="#">
+                                    <div class="business_img">
+                                        <img src="./images/business01x2.png" width="100%" alt="비즈니스이미지1">
+                                    </div>  
+                                    <div class="text">
+                                    <h4>토목사업</h4>
+                                        <p>세상으로 나아가는 길을 열고, 
+                                            보다 나은 삶을 위한 터전을 
+                                            만들어온 기업입니다.
+                                            동아건설은 토목사업과을 통해 세계로 뻗어갑니다.
+                                        </p>
+                                    </div>
+                               </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="business_img">
+                                        <img src="./images/business02x2.png" width="100%" alt="비즈니스이미지2">
+                                    </div>                                
+                                    <div class="text">
+                                        <h4>건축사업</h4>
+                                        <p>보이는 아름다움을 추구하면서도
+                                            보이지않는 기능성을 극대화 시키는
+                                            새로운 공간의 창조를 통해
+                                            건설문화의 새 지평을 열어갑니다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                               <a href="#">
+                                 <div class="business_img">
+                                     <img src="./images/business03x2.png" alt="비즈니스이미지3"  width="100%"> 
+                                 </div>
+                                <div class="text">
+                                  <h4>플랜트 사업</h4>
+                                  <p>발전 플랜트의 독보적 리더로
+                                      최초의 원자력 발전소 시대를 연 
+                                      동아건설의 한발 앞선 플랜트 기술은
+                                      대한민국을 넘어 세계로 도약합니다.
+                                  </p>
+                                </div>
+                               </a>
+                            </li> 
+                        </ul> 
+                    </div>
+
+                    <div class="business_btn">
+                        <a class="left_btn" href="#"><i class="fa-solid fa-angle-left"></i></a>
+                        <a class="right_btn" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="esg">
+                <h3>ESG 경영</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="esg_image1">
+                                <img src="./images/esg01x2.png" alt="품질경영">
+                            </div>
+                            <div class="esg_text">
+                                <h4>품질경영</h4>
+                                <p>지속적인 프로세스 개선으로 고객을 위한 품질경영시스템을 구축합니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="esg_image2">
+                                <img src="./images/esg02x2.png" alt="환경경영">
+                            </div>
+                            <div class="esg_text">
+                                <h4>환경경영</h4>
+                                <p>효율적인 환경경영시스템으로 환경에서의 스마트혁신을 실현합니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="esg_image3">
+                                <img src="./images/esg03x2.png" alt="안전경영">
+                            </div>
+                            <div class="esg_text">
+                                <h4>안전경영</h4>
+                                <p>동아건설산업은 인간존중의 안전보건을 최우선 과제로 실천합니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="scrollBar">
+                    <span></span>
+                </div>
+
+            </section>
+
+            <section class="about">
+                <div class="aboutInner">
+                    <h3>ABOUT <span>DONGAH</span> </h3>
+                    <div>
+                        <ul>
+                            <li><a href="./sub1/sub1_2.html"><i class="fa-solid fa-user-tie"></i>CEO 인사말</a></li>
+                            <li><a href="./sub4/sub4_1.html"><i class="fa-solid fa-file-circle-question"></i>자주하는 질문</a></li>
+                            <li><a href="./sub4/sub4_2.html"><i class="fa-solid fa-location-dot"></i>찾아오시는 길</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+
+        
+        <footer id="footerArea">
+            <div class="footerInner">
+                <a class="topMove" href="#"><span class="hidden">Top으로 이동</span><i class="fa-solid fa-arrow-up-long"></i></a>
+                <a class="footerLogo hidden" href="#"></a>
+                    <ul class="footer_top">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                    </ul>
+                <address>
+                    주  소 | 서울특별시 강남구 언주로 547<br>
+                    T E L | 02-6420-3700 | F A X : 02-6420-3888<br>
+                    E-mail | dongah-construct@dh.co.kr
+                </address>
+                <p>&copy; copyright+ Donga Construction Industrial. All Right Reserved</p>
+                <div class="family">
+                    <a class="arrow" href="#">
+                        <span>family site <i class="fa-solid fa-caret-down"></i></span>
+                    </a>
+                    <ul class="aList">
+                        <li><a href="https://www.smgroup.co.kr/" title="SM GROUP 새창에 열림" target="smgroup">SM GROUP</a></li>
+                        <li><a href="https://www.samwhan.co.kr" title="SM 삼환기업 새창에 열림" target="sm삼환기업">SM 삼환기업</a></li>
+                        <li><a href="https://www.woobang.co.kr/" title="SM 우방산업 새창에 열림" target="sm우방산업">SM 우방산업</a></li>
+                        <li><a href="https://www.smlines.com/kr/" title="SM 상선 새창에 열림" target="sm상선">SM 상선</a></li>
+                        <li><a href="https://www.namsun.co.kr/" title="SM 남선알미늄 새창에 열림" target="sm남선알미늄">SM 남선알미늄</a></li>
+                    </ul>
+                </div>
+    
+                    <div class="sns">
+                        <ul>
+                            <li>
+                                <a href="#"><span class="hidden">페이스북</span><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="hidden">인스타그램</span><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="hidden">유튜브</span><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </footer>
+    </div>
+
+
+ <script src="./js/jquery-1.12.4.min.js"></script>
+ <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+
+ <script src="./js/common.js"></script>
+ <script src="./js/main.js"></script>
+
+
+ <!-- Swiper JS -->
+ <script src="./js/swiper.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ 
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

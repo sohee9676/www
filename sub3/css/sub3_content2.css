@@ -1,0 +1,166 @@
+/* 환경방침 콘텐츠 영역*/
+
+.contentArea .environment01 {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.contentArea h3 {
+    position: relative; 
+    margin: 50px 20px 50px 50px ;
+}
+
+.contentArea .environment01 .rule02{
+    overflow: hidden;
+    width: 1150px;
+    margin: 0 auto;
+}
+.contentArea .environment01 .rule02>img{
+    width: 540px;
+    height: 340px;
+    border: 1px solid #ccc; 
+    float: left;   
+    transition: all .5s ease-out;
+    float: left;
+}
+
+.contentArea .environment01 .rule02>img:hover{
+    transform: scale(1.02);
+}
+.contentArea .environment01 .rule02 .text{
+    margin-top: 20px;
+}
+
+.contentArea .environment01 .rule02 .text p{
+    display: block;
+    width: 520px;
+    float: right;
+    font-size: 1.15em;
+    line-height: 2.2em;
+    text-align: justify;
+    margin-bottom: 20px ;
+}
+
+.contentArea h3::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: #ff9000;
+    position: absolute; left: -10px; top: 0; z-index: -10;
+}
+
+
+/* 환경경영시스템 */
+
+ .contentArea .quality01{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.contentArea .system01{
+    background: rgb(245, 245, 245);
+    padding-bottom: 100px;    
+}
+
+.contentArea .system01 h3{
+    padding: 50px 0;
+    position: relative; left: 420px ; top:50px;
+}
+
+.contentArea .process ul{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.contentArea .process ul li{
+    margin-bottom: 20px;
+}
+
+.contentArea .process ul li:hover dt{
+    color: #bd0202;
+}
+
+.contentArea .process dl{
+    padding: 30px 20px;
+    border: 1px solid #ccc;
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+}
+.contentArea .process dl dt{
+    float: left;
+    width: 270px;    
+    /* margin: 0 0 20px 20px; */
+    font-weight: 500;
+    position: relative; left: 10px; top:-20px;
+}
+
+.contentArea .process dl dt span{
+    color: #bd0202;
+    font-weight: 600;
+    margin: 0 20px 0 0;
+    font-size: 2em;
+    position: relative; left: 0; top:7px;
+}
+
+.contentArea .process dl dd::after{
+    content: '';
+    width: 1px;
+    height: 35px;
+    background: #ccc;
+    position: absolute; left: 255px; top: 30px;
+}
+
+.contentArea .process dl dd{
+    color: #666;
+}
+
+
+/* 인증서 */
+
+.contentArea .paper{
+    padding-bottom: 70px;
+}
+
+.contentArea .paper h3{
+    position: relative; left: 200px; top: 120px;
+}
+
+.contentArea .paper dl{
+    width: 700px;
+    float: left;
+    line-height: 1.5em;
+    margin: 0 70px 70px 500px;
+}
+
+.contentArea .paper dl dt{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.contentArea .paper dl dd{
+    line-height: 2em;
+}
+
+.contentArea .paper dl dd span{
+    display: block;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #999;
+}
+
+.contentArea .paper img{
+    width: 230px;
+    height: 300px;
+    margin: 70px 20px 0 20px;
+    border: 2px solid #ccc;
+    transition: all .5s ease-out;
+}
+
+.contentArea .paper img:hover{
+    transform: scale(1.05);
+    border: 2px solid #bd0202;
+}

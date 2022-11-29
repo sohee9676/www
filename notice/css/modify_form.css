@@ -1,0 +1,98 @@
+
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0 ;
+}
+
+.write_content{
+    margin: 20px 0;
+    padding-bottom: 100px;
+    position:relative
+}
+
+.write_content #write_form{
+    border-bottom: 1px solid #999;
+    }
+
+.write_content #write_form dl{
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.write_content #write_form dl:last-child{
+    border: none
+}
+.write_content #write_form .user_info{
+    border-top: 1px solid #999;
+}
+.write_content #write_form .user_info dd{
+    padding:15px 36px 15px 20px;
+}
+.write_content #write_form dl dt{
+    float: left;
+    width:200px;
+    background: #eee;
+    display: block;
+    padding:15px 20px;
+    text-align: center
+}
+
+.write_content #write_form dl dd{
+    padding:12px 36px 12px 20px;
+    margin-left: 240px;
+}
+
+.write_content #write_form dl dd #title_box{
+    width:100%;
+    border: 1px solid #ccc;
+    padding:7px 10px;
+}
+
+.write_content #write_form .textBox dt{
+    height:400px;
+    box-sizing: border-box;
+    width:240px;
+}
+.write_content #write_form .textBox dd{
+    overflow: hidden
+}
+.write_content #write_form .textBox dd div{
+    display: block;
+    margin-bottom: 15px
+}
+.write_content #write_form .textBox dd textarea#board_content{
+    border: 2px solid #ccc;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.write_content #write_button{
+    position:absolute; right:10px; bottom:30px;
+    overflow: hidden;
+}
+.write_content #write_button a{
+    margin: 0 5px;
+    color:#fff;
+    text-align: center;
+    padding:6px 32px;
+    background: #999;
+    font-weight: 400;
+    cursor: pointer;
+}
+.write_content #write_button input{
+    margin: 0 2px;
+    color:#fff;
+    text-align: center;
+    padding:6px 30px;
+    background: #bd0202;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input:focus,select:focus{
+    outline: none;
+}
+input,select{
+    border:none;
+    box-sizing: border-box
+}

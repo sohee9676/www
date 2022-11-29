@@ -1,0 +1,123 @@
+/* 환경방침 콘텐츠 영역*/
+
+.contentArea .environment01 {
+    padding: 40px 0;
+}
+
+.contentArea h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 6%;
+}
+
+.contentArea .environment01 .rule02>img{
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 20px;
+}
+
+.contentArea .environment01 .rule02 .text{
+    margin-top: 20px;
+}
+
+.contentArea .environment01 .rule02 .text p{
+    display: block;
+    font-size: 1.1em;
+    line-height: 2.2em;
+    text-align: justify;
+    margin-bottom: 20px ;
+    padding: 0 6%;
+}
+
+
+/* 환경경영시스템 */
+
+
+.contentArea .system01{
+    background: rgb(245, 245, 245);
+    padding: 50px 0;    
+}
+
+.contentArea .process ul{
+    margin-top: 5%;
+}
+
+.contentArea .process ul li{
+    margin-bottom: 20px;
+}
+
+.contentArea .process dl{
+    padding: 30px 20px;
+    border-radius: 30px 20px 40px 0px;
+    margin: 0 4%;
+    position: relative;
+    background: #fff;
+}
+.contentArea .process dl dt{
+    float: left;
+    width: 100%;    
+    font-weight: 600;
+    font-size: 1.2em;
+    padding-bottom: 5%;
+}
+
+.contentArea .process dl dt span{
+    color: #bd0202;
+    font-weight: 600;
+    margin: 0 20px 0 0;
+    font-size: 1.5em;
+}
+
+.contentArea .process dl dd::after{
+    content: '';
+    width: 1px;
+    height: 35px;
+    background: #ccc;
+}
+
+.contentArea .process dl dd{
+    color: #666;
+    line-height: 2em;
+    padding: 0 2%;
+    text-align: justify;
+}
+
+
+/* 인증서 */
+
+.contentArea .paper{
+    padding-bottom: 15%;
+}
+
+.contentArea .paper h3{
+    padding: 12% 0 0 8%;
+}
+
+
+.contentArea .paper dl{
+    line-height: 1.5em;
+    padding: 5% 10%;
+}
+
+.contentArea .paper dl dt{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.contentArea .paper dl dd{
+    line-height: 2em;
+}
+
+.contentArea .paper dl dd span{
+    display: block;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #999;
+}
+
+.contentArea .paper img{
+    width: 60%;
+    border: 2px solid #ccc;
+    margin-left: 20%;
+}

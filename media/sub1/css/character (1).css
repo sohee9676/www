@@ -1,0 +1,334 @@
+.videoBox{
+	width: 100%;
+  height: 100%;
+	overflow: hidden;
+	position: absolute;
+} 
+
+.videoBox #imgBG{
+  position: absolute;
+  left: 50%;
+  top:50%;
+	width: auto;
+  min-width: 100%;
+  min-height: 100%;
+	height: auto;
+	overflow: hidden;
+  transform: translate(-50%,-50%);
+  z-index: -100;
+}
+
+.videoBox #imgBG2{
+  position: absolute;
+  left: 50%;
+  top:50%;
+	width: auto;
+  min-width: 100%;
+  min-height: 100%;
+	height: auto;
+	overflow: hidden;
+  transform: translate(-50%,-50%);
+  z-index: -100;
+  display: none;
+}
+
+.title{
+	font-size: 1.2em;
+	letter-spacing: 2px;
+	color: #fff;
+	text-shadow: 2px 3px 3px rgb(204, 191, 2);
+	position: absolute; left: 36%; top: 40%;
+	z-index: 10;
+	transform: translate(-50%,-50%);
+	transition: all .5s;
+  }
+  
+  .videoBox #imgBG2{
+	display: none;
+  }
+  
+
+#content .character h3{
+    font-size: 5em;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 2px 3px 3px rgb(238, 223, 14);
+    position: absolute; left: 38%; top: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+  }
+
+  #content .character{
+    background: #000;
+  }
+
+  #content .character h4{
+    display: block;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px rgb(255, 222, 38);
+    letter-spacing: 7px;
+    padding: 5% 5% 3% 5%;
+    text-align: right;
+  }
+
+  #content .character .main_character li{
+    padding: 4% 5%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #content .character .main_character .main_img{
+    transition: all .5s;
+    border-radius: 20% 10% 30% 80%/ 80% 20% 5% 15%;
+    float: left;
+    margin-right: 7%;
+  }
+
+  #content .character .main_character .overflow{
+    margin-top: 2%;
+  }
+
+  #content .character .main_character .overflow p{
+    line-height: 2em;
+  }
+
+  #content .character .main_character .overflow strong{
+    display: block;
+    padding: 3% 0;
+    font-size: 2.3em;
+    letter-spacing: 3px;
+    transition: all .5s;
+    opacity: 1;
+    text-shadow: 2px 2px 2px rgb(204, 38, 255);
+  }
+
+  #content .character .main_character li:nth-of-type(2) span{
+    top: 16%;
+    left: 35%;
+  }
+
+  #content .character .main_character li:nth-of-type(3) span{
+    top: 16%;
+    left: 32%;
+  }
+
+  #content .character .main_character .rapunzel{
+  background: url(../images/rapunzel_back_dark.png) no-repeat ;
+}
+
+#content .character .main_character .overflow{
+  overflow: hidden;
+}
+
+  #content .character .main_character .img{
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 4% 0 ;
+    margin-left: 6%;
+  }
+  
+  #content .character .main_character .img img{
+    width: 24%;
+    margin: 0 2%;
+    box-sizing: border-box;
+    border: 4px solid rgb(204, 38, 255);
+    border-radius: 20% 10% 30% 80%/ 80% 20% 5% 15%;
+    float: left;
+    transition: all .5s;
+  }
+
+  #content .character .main_character .img img:hover{
+    filter: grayscale(80%);
+    border: 4px solid rgb(207, 233, 60);
+    transform: rotate(-5deg);
+  }
+
+  #content .character .main_character .flynn{
+    background: url(../images/flynn_back_dark.png) 60% no-repeat;
+  }
+
+  #content .character .main_character .gothel{
+    background: url(../images/gothel_back.png);
+  }
+
+  #content .character .fixed{
+    background: url(../images/rapunzel3.jpg) no-repeat;
+  }
+
+  #content .character .sub_character ul{
+    overflow: hidden;
+    padding-bottom: 6%;
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #content .character .sub_character li{
+    padding: 2% 5%;
+    position: relative;
+    float: left;  
+    width: 90%;
+    margin: 0 1%;
+  }
+
+  #content .character .sub_character li img{
+    width: 90%;
+    transition: all .5s;
+    border-radius: 20% 10% 30% 80%/ 80% 20% 5% 15%;
+  }
+
+  #content .character .sub_character li:hover img{
+    filter: none;
+    transform: scale(1.05);
+  }
+
+  #content .character .sub_character li a span{
+    display: block;
+    font-size: 2em;
+    padding: 8% 0;
+    text-align: center;
+    color: #fff;
+  }
+  #content .character .sub_character li a span:hover{
+
+  text-shadow : 2px 3px 3px rgb(204, 38, 255);}
+
+
+  #content .character .sub_character li a p{
+    width: 90%;
+    padding: 0 5%;
+    text-align: center;
+    color: #fff;
+    line-height: 1.8em;
+  }
+
+  #content .character .sub_character .back{
+    background: url(../images/sub_character_dark.png);
+  }
+
+
+/* 중간 */
+@media screen and (max-width:1700px) {
+   
+  #content .character .main_character p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+  #content .character .main_character p{
+     -webkit-line-clamp: 4;
+  }
+
+  #content .character .sub_character ul{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #content .character .sub_character li{
+    padding: 2% 1%;
+    position: relative;
+    width: 90%;
+  }
+
+  #content .character .sub_character li img{
+    width: 90%;
+    transition: all .5s;
+    border-radius: 20% 10% 30% 80%/ 80% 20% 5% 15%;
+  }
+  #content .character .sub_character li a span{
+    font-size: 1.7em;
+  }
+
+
+}
+
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+
+  #content .character .sub_character li a span{
+    font-size: 1.5em;
+  }
+
+   .title{
+    font-size: 2.5em;
+  }
+
+  #content .character .main_character .img{
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 4% 0 ;
+    margin-left: 6%;
+  }
+  
+  #content .character .main_character .img img{
+    display: none;
+  }
+
+  #content .character .main_character .main_img{
+    border-radius: 20% 10% 30% 80%/ 80% 20% 5% 15%;
+    float: none;
+    margin: 0 10%;
+    width: 70%;
+  }
+
+  #content .character .main_character .overflow strong{
+    margin: 2% 0 0 10%;
+  }
+  #content .character .main_character .overflow p{
+    width: 80%;
+    padding: 0 10%;
+  }   
+
+
+  #content .character .sub_character li a p {
+    display: none;   
+  }
+
+
+
+}
+
+
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+  .videoBox #imgBG {
+    display: none;
+  }
+
+   .title{
+    display: block;
+  }
+
+  .videoBox #imgBG2 {
+    display: block;
+  }
+ 
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  #content .character .main_character p{
+     -webkit-line-clamp: 3;
+  }
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+ #wrap { min-width:320px; }
+}
+}

@@ -1,0 +1,139 @@
+body{
+      background: rgb(255, 255, 255);
+      overflow: hidden;
+}
+
+.logo{
+    margin: 50px auto;
+    display: block; 
+    font-size: 1.5em;
+}
+
+#content{
+    width: 100%; 
+    margin: 30px auto;
+    padding: 60px; 
+    font-family: 'Noto Sans KR', sans-serif; 
+    box-shadow: 2px 5px 8px #ccc;
+}  
+
+h2{
+      font-size: 24px; 
+      margin: 10px 0 50px 0px; 
+      color: #333; 
+      text-align: center;
+      position: relative;
+}
+
+h2::before{
+    content: ''; 
+    position: absolute; top: 5px; left: 300px; 
+    width: 5px; height: 28px;
+    background: #bd0202;
+}
+
+table{
+      width: 85%; 
+      margin: 0 10%;
+      font-size: 16px;
+      text-align: left;
+}
+th,td{
+      font-weight: 500;
+      padding: 15px 0;
+      color: #999;
+      background: #eee;
+}
+
+th{
+      width: 80%;
+      display: block;
+      background: none;
+      color: #666;
+      font-size: 1.1rem;
+}
+
+td{
+      margin-bottom: 20px;
+      width: 90%;
+      display: block;
+      border-radius: 5px;
+}
+
+td.lock span{
+      padding-left: 20px;
+      font-size: 14px;
+      color: #333;
+      font-weight: 500;
+}
+
+th::after{
+      content: '*';
+      color: #bd0202;
+      position: relative; left: 5px; top: 0;
+}
+
+td.last{
+      background: none;
+}
+input, select{
+      padding: 5px 20px; 
+      border: 0;
+      background: #eee;
+      width: 60%;
+}
+
+#content #loadtext span, #loadtext2 span{
+      font-size: 14px;
+  }
+
+#hp1, #hp2, #hp3{width: 25%; margin-right: 10px;}
+
+#email1{width: 20%;}
+
+table tr:last-child td{
+      text-align: center; 
+      padding: 20px 0;
+}
+
+select .hp{
+      width: 150px;
+}
+
+input:focus-visible {
+      outline: -webkit-focus-ring-color auto 0px;
+      }
+
+      input:focus {outline: none;}
+
+.ok, .cancel{
+      display: inline-block;
+      width: 300px;
+      line-height: 24px;
+      padding: 20px 0;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 0 5px;
+      border-radius: 8px;
+        }
+
+.ok{            
+      background: #bd0202;
+      width: 48%;
+      }
+      
+.cancel{
+      width: 48%;
+      background: #fff;
+      border: 1px solid #eee;
+      box-sizing: border-box;
+      }
+
+.ok span{
+      color:#fff
+      }
+
+.cancel span{
+      color: #333;
+      }

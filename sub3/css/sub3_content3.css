@@ -1,0 +1,279 @@
+/* 품질방침 콘텐츠 영역*/
+
+.contentArea h3 {
+    margin: 80px 0 50px 0px; 
+    position: relative;
+}
+
+.contentArea h3::after{
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: #ff9000;
+    position: absolute; left: -10px; top: 0; z-index: -10;
+}
+
+.contentArea .quality01 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contentArea .quality01 p{
+    font-size: 1.2em;
+    background: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contentArea .quality01 .rule01{
+    font-size: 1.25em;
+    line-height: 1.75em;
+    text-align: justify;
+    margin: 50px 0 0 120px;
+}
+
+.contentArea .quality01 .rule_box01:hover{
+    transform: scale(1.02);}
+
+.contentArea .quality01 .rule_box01:hover dt{
+    color: #bd0202;
+}
+
+.contentArea .quality01 .rule_box02:hover dt{
+    color: #bd0202;
+}
+
+.contentArea .quality01 .rule_box02:hover{
+    transform: scale(1.02);
+}
+
+
+.contentArea .quality01 .rule01 dd{
+    margin: 50px;
+    display: block;
+}
+
+.contentArea .quality01 .rule01 dt{
+    font-size: 1.1em;
+    display: block;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.contentArea .quality01 .rule01 dd{
+    margin: 40px 50px;
+    font-size: 18px;
+}
+
+.contentArea .quality01 .rule01 img{
+    width: 550px;
+    height: 390px;
+}
+
+.contentArea .quality01 .rule_box01{
+    width: 1200px;
+    overflow: hidden;
+    margin-bottom: 80px;
+    border: 1px solid #ccc;
+    border-radius: 0 50px;
+    overflow: hidden;
+    position: relative; left: -110px;
+    transition: all .5s;
+}
+
+.contentArea .quality01 .rule_box01>dl{
+    margin-left: 50px;
+}
+
+.contentArea .quality01 .rule_box01 img{
+    float: left;
+    margin-right: 50px;
+}
+
+.contentArea .quality01>h3{
+    margin-left: 50px;
+}
+
+
+
+/* 품질경영시스템 */
+
+.contentArea .quality02{
+    width: 100%;
+    background: #f8f8f8; 
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.contentArea .quality02 .system{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contentArea .quality02 h3{
+    padding: 70px 0 0 850px;
+}
+
+.contentArea .quality02 .system ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contentArea .quality02 .system li{
+    float: left;
+    width: 210px;
+    height: 210px;
+    margin: 20px 30px;
+    text-align: center;
+    border: 1px solid #ccc; 
+    border-radius: 50%;
+    background: #fff;
+    transition: all .5s;
+    font-weight: 500;
+}
+
+.contentArea .quality02 .system li:hover{
+    border: 1px solid #bd0202;
+    color: #bd0202;
+}
+
+.contentArea .quality02 .system li:hover i{
+    color: #bd0202;
+}
+
+.contentArea .quality02 ul li>i{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: #666;
+    font-size: 2.2em;
+    margin: 60px 0 30px 0;
+    transition: all .5s;
+}
+
+.contentArea .quality02 span{
+    font-size: 2em;
+    color: rgba(0,0,0,.4);
+}
+
+.contentArea .quality02 span:nth-of-type(1){
+    position: absolute; left: 610px; top: 280px;
+}
+.contentArea .quality02 span:nth-of-type(2){
+    position: absolute; left: 880px; top: 280px;
+}
+.contentArea .quality02 span:nth-of-type(3){
+    position: absolute; left: 1150px; top: 280px;
+}
+
+
+/*안전관리체계*/
+
+ .contentArea .process{
+     margin-left: 20px;
+}
+
+.contentArea .process p{
+    font-size: 1.5em;
+    font-weight: 500;
+    position: relative;
+    margin-top: 60px;
+    position: relative; left: 350px; top: 50px;
+}
+
+.contentArea .process p::after{
+    content: 'Plan Do Check Action';
+    color: #ff9000;
+    font-size: .7em;
+    position: absolute; left: 0px; top: 50px;
+}
+
+.contentArea .process dl{
+    width: 1200px;
+    position: relative; z-index: 10;
+    margin: 20px 0 30px 700px;
+    overflow: hidden;
+}
+
+.contentArea .process dl dt{
+    float: left;
+    width: 200px;
+    padding: 15px 0;    
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid #bd0202;
+    border-radius: 20px 0;
+    background: #bd0202;
+    color: #fff;
+}
+
+.contentArea .process dl dt span{
+    color: #bd0202;
+    font-weight: 600;
+    margin: 0 20px 20px 0;
+    font-size: 2.2em;
+    position: relative; left: 0; top:7px;
+}
+
+.contentArea .process dl dd{
+    color: #666;
+    padding: 15px 30px;
+    width: 660px;
+    margin-left: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+}
+
+
+
+/*인증서*/
+
+.contentArea .paper{
+    width: 1200px;
+    margin-left: 500px; 
+    padding-bottom: 100px;
+}
+
+.contentArea .paper h3{
+    margin: 20px 0;
+    position: relative; left: -120px; top: 120px;
+}
+
+.contentArea .paperInner dl{
+    width: 650px;
+    line-height: 1.5em;
+    margin: 30px 0 0 100px;
+    float: left;
+}
+
+.contentArea .paperInner dl dt{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.contentArea .paperInner dl dd{
+    line-height: 2em;
+}
+
+.contentArea .paperInner dl dd span{
+    display: block;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #999;
+}
+
+.contentArea .paper img{
+    width: 230px;
+    height: 300px;
+    margin: 60px 20px 0 100px;
+    border: 2px solid #ccc;
+    transition: all .5s ease-out;
+}
+
+.contentArea .paper img:hover{
+    transform: scale(1.05);
+    border: 2px solid #bd0202;
+}

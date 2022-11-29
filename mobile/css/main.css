@@ -1,0 +1,288 @@
+/* CSS Document */
+
+.main{
+    position: relative;
+}
+
+.main .swiper-container{
+    width: 100%;
+  }
+
+.main .swiper-container .swiper-slide span{
+    display: block;
+    text-align: left;
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 600;
+    z-index: 50;
+    text-shadow: 2px 2px 3px #333;
+    position: absolute; left: 20px; top: 230px;
+    }
+
+    /* 본문 콘텐츠 영역 */
+
+#content{
+    width: 100%
+}
+
+#content h3{
+    font-size: 2.2em;
+    font-weight: 600;
+    margin: 8% 0;
+}
+
+/* Who we are 영역*/
+
+#content .valueInner{
+    padding: 30px 0;
+}
+
+#content .valueInner h3{
+    text-align: center;
+}
+
+#content .valueInner ul{
+    overflow: hidden;
+    text-align: center;
+
+}
+
+#content .valueInner ul li{
+    float: left;
+    width: 45%;
+    margin: 2%;
+}
+
+#content .valueInner ul li div{
+    width: 100%;
+    height: 101px;
+}
+
+#content .valueInner ul li .value_img1{
+    background: url(../images/value01x2.png) no-repeat center;
+    background-size: cover;
+}
+
+#content .valueInner ul li .value_img2{
+    background: url(../images/value02x2.png) no-repeat center;
+    background-size: cover;
+}
+
+#content .valueInner dl{
+    width: 80%;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#content .valueInner dl dt{
+    font-weight: 600;
+    margin: 10% 15%;
+    width: 70%;
+    padding: 12px 0;
+    background: #ccc;
+    color: #fff;
+    border-radius: 20px;
+}
+
+#content .valueInner dl dd{
+    line-height: 1.5em;
+}
+
+
+/*business*/
+
+#content .business{
+    position: relative;
+    background: #f8f8f8;
+}
+
+#content .business_box{
+    padding: 30px 0 0 0;
+}
+
+#content .business_box h3{
+    padding-left: 5%;
+}
+
+#content .business_box h4{
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 6% 0 0 5%;
+    color: #fff;
+}
+
+#content .business_box p{
+    padding: 5%;
+    line-height: 1.75em;
+    color: #fff;
+}
+
+#content .business_box{
+    position: relative;
+}
+
+#content .business_box .boxInner img{
+    width: 90%;
+    margin: 5% 0 0 5%;
+    z-index: 50;
+}
+
+#content .business_box .boxInner li{
+    background: #bd0202;
+    width: 100%;
+}
+
+#content .business_btn{
+    overflow: hidden;
+    font-size: 2em;
+    text-align: center;
+}
+
+#content .business_btn a{
+    display: block;
+    width: 40px;
+    padding: 4px 0;
+    border-radius: 50%;
+    background: #dbdbdb;
+    color: #fff;
+    margin-right: 1%;
+    float: left;
+    position: absolute; right: 10px; top:55px;
+}
+
+#content .business_btn a:nth-of-type(1){
+    position: absolute; right: 60px; top: 55px;
+}
+
+
+
+/*esg*/
+
+#content .esg{
+    position: relative;
+    background: #f8f8f8;
+    padding: 3% 0;
+}
+#content .esg h3{
+    padding: 4% 0 0 3%;
+}
+
+#content .esg ul {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all .5s ease-out;
+}
+
+#content .esg ul li {
+    vertical-align: top;
+    margin: 0 10px;
+    background: #fff;
+}
+#content .esg ul li a {
+    display: block;
+    text-align: justify;
+}
+
+#content .esg .scrollBar {
+    width: 80%;
+    height: 8px;
+    margin: 5% 8%;
+    border-radius: 8px;
+    background: #fff;
+}
+
+#content .esg .scrollBar span {
+    display: block;
+    width: 30%;
+    height: 8px;
+    border-radius: 8px;
+    background: #bd0202;
+}
+
+#content .esg h4{
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 5% 0;
+    display: block;
+    text-align: center;
+}
+
+#content .esg p{
+    padding: 6% 4% 10% 4%;
+    line-height: 1.5em;
+    text-align: justify;
+    width: 200px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+#content .esg .esg_text{
+    background: #fff;
+}
+
+#content .esg ul li .esg_image1,
+#content .esg ul li .esg_image2,
+#content .esg ul li .esg_image3,
+#content .esg ul li .esg_image4,
+#content .esg ul li .esg_image5 {
+    position: relative;
+    overflow: hidden;
+    width: 220px;
+    margin-bottom: 20px;
+    box-shadow: 20px 20px 20px 0 rgb(0 0 0 / 5%);
+}
+#content .esg ul li .esg_image1 img,
+#content .esg ul li .esg_image2 img,
+#content .esg ul li .esg_image3 img,
+#content .esg ul li .esg_image4 img,
+#content .esg ul li .esg_image5 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/*about*/
+
+#content .about{
+    padding: 2% 0 10% 0;
+}
+
+#content .about h3{
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+#content .about h3 span{
+    color: #bd0202;
+}
+
+#content .about ul{
+    margin-left: 15%;
+}
+
+#content .about li{
+    text-align: center;
+    width: 80%;
+    padding: 6% 0;
+    margin: 4% 0;
+    background: #ccc;
+    border-radius: 10px;
+}
+
+#content .about li a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+#content .about li i{
+    margin-right: 3%;
+    color: #fff;
+}
+
+

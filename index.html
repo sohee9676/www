@@ -1,0 +1,280 @@
+<? 
+    session_start(); 
+
+    @extract($_POST);
+	@extract($_GET);
+	@extract($_SESSION);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM 동아건설산업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./maincss/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/e960e8ad99.js" crossorigin="anonymous"></script>
+    <script src="./common/js/prefixfree.min.js"></script>
+    <script src="./mainjs/mainpopup.js"></script>
+</head>
+
+<body>
+
+    <? include "./common/main_header.html" ?>
+
+        <div class="main">
+            <div class="gallery">
+                <ul>
+                    <li class="link1"><a href="#"><img src="./images/visual001.jpg" alt="메인비주얼1" ><span>Dong Ah's impressive <br>global works for humankind</span></a></li>
+                    <li class="link2"><a href="#"><img src="./images/visual002.jpg" alt="메인비주얼2" ><span>무한가치를 창조하는 <br>세계적 E&C Contractor</span></a></li>
+                    <li class="link3"><a href="#"><img src="./images/visual003.jpg" alt="메인비주얼3" ><span>Dong Ah's impressive <br>global works for humankind</span></a></li>
+                    <li class="link4"><a href="#"><img src="./images/visual004.jpg" alt="메인비주얼4" ><span>무한가치를 창조하는 <br>세계적 E&C Contractor</span></a></li>
+                </ul>
+            </div> 
+
+            <div class="dock">
+                <span class="mbutton btn1"></span>
+                <span class="mbutton btn2"></span>
+                <span class="mbutton btn3"></span>
+                <span class="mbutton btn4"></span>
+                <span class="ps"><span class="hidden">stop</span><i class="fa-solid fa-pause"></i></span>
+            </div>
+            <span class="btn btnLeft"><span class="hidden">left</span><i class="fas fa-chevron-left"></i></span>
+            <span class="btn btnRight"><span class="hidden">right</span><i class="fas fa-chevron-right"></i></span>
+        
+        </div>
+
+
+        <article id="content">
+            <h2 class="hidden">본문 콘텐츠 영역</h2>
+            <section class="value">
+                <div class="valueInner">
+                    <h3>WHO WE ARE?</h3>
+                        <ul>
+                            <li>
+                                <img src="./images/value01.jpg" alt="기술개발 사진">
+                                <dl>
+                                    <dt>기술개발</dt>
+                                    <dd>진정한 기술 경쟁력을 구축하여
+                                        최고의 가치를 선사합니다.</dd>
+                                </dl>
+                                <a class="more" href="./sub1/sub1_1.html">more +<span class="hidden">더보기</span></a>
+                            </li>
+                            <li>
+                                <img src="./images/value02.jpg" alt="미래실현 사진">
+                                <dl>
+                                    <dt>미래실현</dt>
+                                    <dd>파트너 협력으로 시대를 앞서<br>
+                                        스마트 혁신을 이끌어갑니다.</dd>
+                                </dl>
+                                <a class="more" href="./sub1/sub1_1.html">more +<span class="hidden">더보기</span></a>
+                            </li>
+                            <li>
+                                <img src="./images/value03.jpg" alt="핵심가치 사진">
+                                <dl>
+                                    <dt>핵심가치</dt>
+                                    <dd>열정, 도전, 혁신의 가치로<br>
+                                        고객을 위해 만들어갑니다.</dd>
+                                </dl>
+                                <a class="more" href="./sub1/sub1_1.html">more +<span class="hidden">더보기</span></a>
+                            </li> 
+                        </ul>
+                </div>
+            </section>
+
+            <section class="business">
+                <div class="business_box">
+                    <h3>BUSINESS</h3>
+                    <div class="boxInner">
+                        <div class="business_img">
+                            <img src="./images/business001.jpg" alt="비즈니스이미지1">
+                            <img src="./images/business002.jpg" alt="비즈니스이미지2">
+                            <img src="./images/business003.jpg" alt="비즈니스이미지3"> 
+                        </div>
+                        <ul>
+                            <li class="business_text">
+                                <h4>토목사업</h4>
+                                <p>세상으로 나아가는 길을 열고, 
+                                    보다 나은 삶을 위한 터전을 
+                                    만들어온 기업입니다.
+                                    동아건설은 토목사업과...</p>
+                                <a class="more" href="./sub2/sub2_1.html">more +<span class="hidden">더보기</span></a>
+                            </li>
+                            <li class="business_text">
+                                <h4>건축사업</h4>
+                                <p>보이는 아름다움을 추구하면서도
+                                    보이지않는 기능성을 극대화 시키는
+                                    새로운 공간의 창조를 통해
+                                    건설문화의 새 지평을...
+                                </p>
+                                <a class="more" href="./sub2/sub2_2.html">more +<span class="hidden">더보기</span></a>
+                            </li>
+                            <li class="business_text">
+                                <h4>플랜트 사업</h4>
+                                <p>발전 플랜트의 독보적 리더로
+                                    최초의 원자력 발전소 시대를 연 
+                                    동아건설의 한발 앞선 플랜트 기술은
+                                    대한민국을 넘어 세계...
+                                </p>
+                                <a class="more" href="./sub2/sub2_3.html">more +<span class="hidden">더보기</span></a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="business_btn">
+                    <a class="left_btn" href="#"><i class="fa-solid fa-angle-left"></i></a>
+                    <a class="right_btn" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </section>
+
+            <section class="esg">
+                <h3>지속가능경영</h3>
+                <div class="esgInner">
+                    <ul>
+                        <li class="esg01">
+                            <div class="esg_box">
+                                <div class="esg_title">
+                                    <h4>01 품질경영</h4>
+                                </div>
+                                <div class="esg_main">                            
+                                    <div class="esg_text">
+                                        <p>윤리적 책임을 다함으로써
+                                            임직원, 주주, 고객, 협력업체 등
+                                            이해관계자들에게 신뢰를 얻고
+                                            함께 성장해 나갈 수 있도록 
+                                            노력하고 있습니다.
+                                        </p>
+                                    </div>
+                                    <a href="./sub3/sub3_1.html" class="more">more +</a>
+                                </div>
+                            </div>
+                            <div class="esg_view">
+                                 <span class="ag_btn01"></span>
+                            </div>
+                        </li>
+                        <li class="esg02">
+                            <div class="esg_box">
+                                <div class="esg_title">
+                                    <h4>02 환경경영</h4>
+                                </div>
+                                <div class="esg_main">
+                                    <div class="esg_text">
+                                        <p>고객이 요구하거나 필요로 하는
+                                            제품과 서비스를 적시에 제공하고
+                                            내,외부 고객의 요구사항을
+                                            충족시킴으로써 공식력을 강화합니다.
+                                        </p>
+                                    </div>
+                                        <a href="./sub3/sub3_2.html" class="more">more +</a>                           
+                                    </div>
+                                </div>
+                                <div class="esg_view">
+                                    <span class="ag_btn02"></span>
+                                </div>
+                        </li>
+                        <li class="esg03">
+                            <div class="esg_box">
+                                <div class="esg_title">
+                                    <h4>03 안전경영</h4>
+                                </div>
+                                <div class="esg_main">
+                                    <div class="esg_text">
+                                        <p>
+                                            지구촌 환경문제를 인식하고
+                                            자연보존에 앞장서 환경친화적 
+                                            제품,활동,서비스를 제공하여
+                                            인류의 삶을 풍요롭게
+                                            하는 것에 기여하고자 합니다.
+                                        </p>
+                                    </div>
+                                        <a href="./sub3/sub3_3.html" class="more">more +</a>
+                                </div>
+                            </div>
+                            <div class="esg_view">
+                                <span class="ag_btn03"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <? include "./lib/func.php"; ?>
+            
+            <section class="news">
+               <div class="news_box">
+                    <h3>NEWS ROOM</h3>
+                    <div id="slide_gallery_box">
+                        <div class="news_inner">
+                            <ul id='list_item'>
+                                <? latest_article('news', 10, 40) ?>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="top_btn">
+                        <ul>
+                            <li>
+                                <a href="./news/list.php" class="more"><i class="fa-solid fa-plus"></i><span class="hidden">더보기</span></a> 
+                            </li>
+                            <li class="bt">
+                                <a class="left_btn" href="#"><i class="fa-solid fa-chevron-left"></i> <span class="hidden">이전</span> </a> 
+                            </li>
+                            <li class="bt">
+                                <a class="right_btn" href="#"><i class="fa-solid fa-chevron-right"></i> <span class="hidden">다음</span> </a>
+                            </li> 
+                        </ul>
+                    </div>
+               </div>  
+            </section>
+
+            <section class="hire">
+                <div class="hire_box">
+                    <h3>인재채용</h3>
+                    <P>SM동아건설과 함께라면 <br>당신의 꿈과 비전이 현실이 됩니다.</P>
+                    <a class="more" href="./sub5/sub5_1.html">바로가기</a>
+                </div>
+            </section>
+        </article>
+
+        <? include "./common/main_footer.html" ?>
+        <script src="./mainjs/move.js"></script>
+        <script src="./mainjs/main.js"></script>
+
+
+    <!-- 공지팝업 -->
+
+    <div id="showimage" style="z-index:40; 
+            width:322px;
+            position:absolute; 
+            right:80px;top:350px;">
+        <script>
+          function closeWin(){
+             var chk = document.getElementById('Notice')
+             if ( chk.checked ) {
+                   setCookie( "Notice", "done" , 1); 
+                   //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+              }
+          }
+         if ( getCookie( "Notice" ) == "done" ) {
+             hidebox();
+         }
+       </script>
+
+        <div>
+            <img src="./popup/popup.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.">
+        </div>
+        <div style="font-size:12px; 
+                    text-align:center; 
+                    color:#fff;">
+                    <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자">
+                    <label for="Notice">오늘은 이창을 열지 않음.</label>
+            <a href="#" onclick="closeWin();hidebox();return false;" style="color:#fff"> [close] </a>
+        </div>
+    </div>
+      
+</body>
+
+</html>

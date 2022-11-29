@@ -1,0 +1,73 @@
+/* 서브페이지 공통영역 */
+
+.main{
+    width: 100%;
+    position: relative;
+}
+
+.main h3{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #fff;
+    position: absolute; top:50%; left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.subNav{
+    width:100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.subNav ul{
+    overflow: hidden;
+    margin-left: 20%;
+}
+
+.subNav ul li{
+    float: left;
+    width: 35%;
+    text-align: center;
+    margin-right: 5%;
+}
+
+.subNav ul li a{
+    display: block;
+    padding: 16px 0 12px 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.subNav ul li .current{
+    color: #bd0202;
+    border-bottom: 2px solid #bd0202;
+    font-weight: 600;
+}
+
+#content .titleArea{
+    text-align: center;
+}
+
+#content .titleArea h2{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    margin: 50px;
+    position: relative;
+}
+
+#content .titleArea h2::after{
+    content: "";
+    width: 2px;
+    height: 25px;
+    background: #bd0202;
+    position: absolute; left: 50%; top: 160%;
+}
+
+#content .titleArea p{
+    text-align: center;
+    font-size: 1.1em;
+    color: #333;
+    font-family: 'Noto Serif KR', serif;
+    padding: 1px 0;
+    line-height: 1.75em;
+}

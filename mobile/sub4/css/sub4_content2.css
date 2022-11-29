@@ -1,0 +1,63 @@
+/* 오시는 길 본문 영역 */
+
+.contentArea{
+    width:100%;
+}
+.contentArea .map{
+    width: 90%;
+    margin: 10% 0 10% 5%;
+}
+
+.contentArea .map #company{
+    height: 300px;
+    border: 1px solid #666;
+    margin: 0 auto;
+}
+
+.contentArea .map dl{
+    margin: 12% 4% 0 4%;
+    line-height: 2.5em;
+    position: relative;
+}
+
+.contentArea .map dt{
+    font-size: 1.3em;
+    text-align: justify;
+    margin-top: 8%;
+    color: #bd0202;
+    position: relative;
+    font-weight: 600;
+}
+
+.contentArea .map dt::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #999;
+    position: absolute; left: 0; top: 40px;
+}
+
+.contentArea .map dd{
+    margin: 10px 10px 0 0;
+}
+
+.contentArea .map strong{
+    font-size: 1.2em;
+}
+
+.contentArea .map .info01 strong{
+    margin-right: 10px;
+}
+
+.contentArea .map .info02 strong{
+   display: block;
+   margin-top: 20px ;
+}
+
+.contentArea .map strong i{
+    margin-right: 10px;
+}
+
+.contentArea .map dd>span{
+    color: #666;
+}

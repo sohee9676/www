@@ -1,0 +1,8 @@
+/* 서브페이지 공통영역 */
+
+.subNav ul{
+    width: 945px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+

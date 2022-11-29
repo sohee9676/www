@@ -1,0 +1,145 @@
+.contentArea .hire01{
+    width: 100%;
+    background: #f8f8f8;
+    padding: 50px 0 30px 0;
+}
+
+.contentArea .hire01 .hire_list{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contentArea .hire01 .hire_list>p{
+    font-size: 2em;
+    margin: 0px 0 50px 0px;
+    font-weight: 500;
+}
+
+.contentArea .hire01 .hire_list>p::after{
+    content: 'DongAh with you';
+    font-size: .5em;
+    position: relative; left: -100px; top: 35px;
+    color: #ccc;
+}
+
+.contentArea .hire_list>ul{
+    height: 530px;
+    overflow: hidden;
+}
+
+.contentArea .hire_list li{
+    /* border: 1px solid #ccc; */
+    border-radius: 50%;
+    float: left;
+    width: 220px;
+    height: 220px;
+    margin: 30px;
+    background: #fff;
+    text-align: center;
+}
+
+
+.contentArea .hire_list li i{
+    display: block;
+    width: 230px;
+    font-size: 3.2em;
+    margin: 70px 0 20px 0;
+    transition: all .5s;
+}
+
+.contentArea .hire_list li:hover{
+    box-shadow: 2px 3px 5px rgba(0,0,0,.4);
+}
+
+.contentArea .hire_list li:hover i, li:hover span{
+    color: #bd0202;
+}
+
+.contentArea .hire_list li span{
+    display: block;
+    width: 230px;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+.contentArea .hire_list li p{
+    width: 200px;
+}
+
+.contentArea .hire_list p{
+    margin-top: 70px;
+    line-height: 2em;
+}
+
+/*인재상 중간*/
+
+.contentArea .hire_middle{
+    width: 100%;
+    height: 240px;
+    background: url(/extra/back000.jpg) fixed;
+}
+
+/*인재상 2*/
+
+.contentArea .hire_main{
+    width: 100%;
+    position: relative;
+    padding-bottom: 100px; 
+    background: url(/extra/back03.jpg) fixed;
+}
+
+.contentArea .hire_main ul{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: justify;
+    line-height: 2.2em;
+}
+
+ .contentArea .hire_main ul li{
+    width: 470px;
+    height: 220px;
+    float: left;
+    padding: 30px;
+    margin: 0 0 10px 10px;
+    position: relative;
+     background: #fff; 
+}
+
+/* .contentArea .hire_main ul li:nth-last-of-type(1):after{
+    content: '';
+    width: 2px;
+    height: 550px;
+    background: #999;
+    position: absolute; left: -10px; top: -290px; z-index: 1;
+}
+
+.contentArea .hire_main ul li:nth-last-of-type(4):after{
+    content: '';
+    width: 1050px;
+    height: 2px;
+    background: #999;
+    position: absolute; left: 20px; top: 320px; z-index: 1;
+} */
+
+
+
+.contentArea .hire_main dl dt{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #bd0202; 
+}
+
+
+.contentArea .hire_main .company img{
+   width: 250px;
+   margin-left: 780px;
+   padding: 60px 0;
+}
+
+
+
+
+
